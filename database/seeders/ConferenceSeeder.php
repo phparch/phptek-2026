@@ -19,7 +19,7 @@ class ConferenceSeeder extends Seeder
         if (!Conference::where('uuid', $conferenceUuid)->exists()) {
             Conference::create([
                 'uuid' => $conferenceUuid,
-                'name' => 'PHP Tek 2026',
+                'name' => 'PHP TEK 2026',
                 'venue_name' => 'Sheraton Suites Chicago O\'Hare',
                 'venue_address' => '6501 Mannheim Road, Rosemont, Illinois, USA, 60018',
                 'start_date' => '2026-05-19 09:00:00',

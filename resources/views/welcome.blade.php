@@ -32,7 +32,7 @@
 
 <section class="hero-gradient text-white py-20 md:py-32">
     <div class="container mx-auto px-6 text-center">
-        <img src="{{ asset('images/PHPTek2026-Logo_500x500.png') }}" alt="PHP Tek"
+        <img src="{{ asset('images/PHPTek2026-Logo_500x500.png') }}" alt="PHP TEK"
              class="mx-auto mb-8 rounded-full bg-white shadow-2xl"
              onerror="this.onerror=null; this.src='https://placehold.co/150x150/FFFFFF/3672A5?text=Logo+Error';">
         <h2 class="text-4xl md:text-6xl font-bold mb-4">
@@ -50,12 +50,18 @@
                 <span class="text-orange font-semibold">Location:</span> {{ $conference->getVenueName() }}
             </p>
         </div>
-        <div class="mt-12">
-            <a href="#"
-               class="btn-orange font-bold py-3 px-8 rounded-lg text-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1">
-                Notify Me When Tickets Launch!
-            </a>
-            <p class="mt-4 text-sm text-gray-300">(Registration opening soon)</p>
+        <br/>
+        <br/>
+        <div class="bg-white text-gray-800 inline-block p-6 md:p-8 rounded-lg shadow-2xl max-w-2xl mx-auto">
+            <h3 class="text-2xl md:text-3xl font-semibold text-blue mb-4">
+                JOIN THE COMMUNITY OF PHP ARCHITECTS, DEDICATED TO CONTINUING EDUCATION!
+            </h3>
+            <div class="mt-12">
+                <a href="https://ti.to/phptek/phptek-2026"
+                   class="btn-orange font-bold py-3 px-8 rounded-lg text-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    SECURE YOUR SPOT NOW!
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -67,7 +73,7 @@
         </h2>
         <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
             <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                PHP Tek is a long-standing, highly respected conference dedicated to the PHP programming language and
+                PHP TEK is a long-standing, highly respected conference dedicated to the PHP programming language and
                 related web technologies.
                 Join us for multiple tracks of in-depth sessions, hands-on workshops, and invaluable networking
                 opportunities with experts and peers from around the globe.
@@ -75,6 +81,17 @@
             <p class="text-lg text-gray-700 leading-relaxed">
                 Whether you're looking to deepen your existing skills, explore new frameworks, or connect with the
                 vibrant PHP community, {{ $conference->name }} is the place to be.
+            </p>
+        </div>
+    </section>
+
+    <section id="inspired" class="mb-16">
+        <h2 class="text-3xl font-bold text-center text-blue mb-8">
+            MEET MAINTAINERS AND CREATORS
+        </h2>
+        <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg text-center">
+            <p class="text-lg text-gray-700 mb-4">
+                Come learn from and meet some of the developers behind the PHP language and its most popular frameworks and libraries.
             </p>
         </div>
     </section>
@@ -123,9 +140,9 @@
 
 <footer class="bg-blue text-white py-8 mt-16">
     <div class="container mx-auto px-6 text-center">
-        <p class="mb-2">&copy; {{ date('Y') }} PHP Tek Conference. All rights reserved.</p>
+        <p class="mb-2">&copy; {{ date('Y') }} PHP TEK Conference. All rights reserved.</p>
         <p class="text-sm text-gray-300">
-            PHP Tek is organized by the PHP community, for the PHP community.
+            PHP TEK is organized by the PHP community, for the PHP community.
         </p>
         <div class="mt-4">
             <!-- <a href="#" class="text-gray-300 hover:text-white mx-2">Facebook</a>
