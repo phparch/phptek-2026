@@ -115,3 +115,84 @@ body {
 .border-orange {
     border-color: #EF612F;
 }
+
+:root {
+    /* Colors - Light mode */
+    --color-primary: #EF612F;
+    --color-secondary: #3672A5;
+    --color-background: #FFFFFF;
+    --color-text-primary: #1F2937;
+    --color-text-secondary: #4B5563;
+
+    /* Fonts */
+    --font-sans: 'Inter', sans-serif;
+    --font-display: 'Montserrat', sans-serif;
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-primary: #818CF8;
+        --color-secondary: #34D399;
+        --color-background: #111827;
+        --color-text-primary: #F9FAFB;
+        --color-text-secondary: #D1D5DB;
+    }
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
+.bg-background {
+    background-color: var(--color-background);
+}
+
+.text-primary {
+    color: var(--color-text-primary);
+}
+
+.text-secondary {
+    color: var(--color-text-secondary);
+}
+
+.font-sans {
+    font-family: var(--font-sans);
+}
+
+.font-display {
+    font-family: var(--font-display);
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+}
+
+.animate-bounce-slow {
+    animation: bounce 3s infinite;
+}
+
+.animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

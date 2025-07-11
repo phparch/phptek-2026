@@ -6,7 +6,7 @@ use Livewire\Volt\Volt;
 
 Route::get('/', function () {
     $conference = Conference::first();
-    return view('welcome', compact('conference'));
+    return view('single', compact('conference'));
 })->name('home');
 
 Route::middleware(['auth'])->group(function () {
