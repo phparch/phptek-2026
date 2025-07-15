@@ -23,6 +23,27 @@
     --color-zinc-900: #171717;
     --color-zinc-950: #0a0a0a;
 
+    /* Custom PHP Tek colors */
+    --color-tek-blue-100: #d2dfeb;
+    --color-tek-blue-200: #bcd0e1;
+    --color-tek-blue-300: #a5c0d7;
+    --color-tek-blue-400: #8fb1cd;
+    --color-tek-blue-500: #79a1c3;
+    --color-tek-blue-600: #6291b9;
+    --color-tek-blue-700: #4c82af;
+    --color-tek-blue-800: #3672a5;
+    --color-tek-blue-900: #20639B;
+
+    --color-tek-orange-100: #fbdfd5;
+    --color-tek-orange-200: #f9cfc0;
+    --color-tek-orange-300: #f8bfab;
+    --color-tek-orange-400: #f6b097;
+    --color-tek-orange-500: #f4a082;
+    --color-tek-orange-600: #f3906d;
+    --color-tek-orange-700: #f18058;
+    --color-tek-orange-800: #ef7043;
+    --color-tek-orange-900: #EE612F;
+
     --color-accent: var(--color-neutral-800);
     --color-accent-content: var(--color-neutral-800);
     --color-accent-foreground: var(--color-white);
@@ -33,6 +54,14 @@
         --color-accent: var(--color-white);
         --color-accent-content: var(--color-white);
         --color-accent-foreground: var(--color-neutral-800);
+        
+        /* Enhanced dark mode colors */
+        --color-background-dark: #0f1419;
+        --color-surface-dark: #1a1f2e;
+        --color-surface-elevated-dark: #242938;
+        --color-text-primary-dark: #e2e8f0;
+        --color-text-secondary-dark: #94a3b8;
+        --color-border-dark: #334155;
     }
 }
 
@@ -69,7 +98,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-/* Customizing scrollbar for a cleaner look (optional) */
+/* Customizing scrollbar for a cleaner look */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -79,47 +108,35 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #3672A5; /* Blue accent */
+    background: var(--color-tek-blue-800);
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #2d5f8a;
+    background: var(--color-tek-blue-900);
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+    background: #1a1f2e;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: var(--color-tek-blue-600);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-tek-blue-500);
 }
 
 .hero-gradient {
-    background: linear-gradient(135deg, #3672A5 0%, #2a5a8a 100%);
-}
-
-.btn-orange {
-    background-color: #EF612F;
-    color: white;
-}
-
-.btn-orange:hover {
-    background-color: #d9572a;
-}
-
-.text-orange {
-    color: #EF612F;
-}
-
-.text-blue {
-    color: #3672A5;
-}
-
-.bg-blue {
-    background-color: #3672A5;
-}
-
-.border-orange {
-    border-color: #EF612F;
+    background: linear-gradient(135deg, var(--color-tek-blue-800) 0%, var(--color-tek-blue-900) 100%);
 }
 
 :root {
     /* Colors - Light mode */
-    --color-primary: #EF612F;
-    --color-secondary: #3672A5;
+    --color-primary: var(--color-tek-orange-900);
+    --color-secondary: var(--color-tek-blue-800);
     --color-background: #FFFFFF;
     --color-text-primary: #1F2937;
     --color-text-secondary: #4B5563;
@@ -132,11 +149,11 @@ body {
 /* Dark mode overrides */
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-primary: #818CF8;
-        --color-secondary: #34D399;
-        --color-background: #111827;
-        --color-text-primary: #F9FAFB;
-        --color-text-secondary: #D1D5DB;
+        --color-primary: var(--color-tek-orange-500);
+        --color-secondary: var(--color-tek-blue-400);
+        --color-background: #0f1419;
+        --color-text-primary: #e2e8f0;
+        --color-text-secondary: #94a3b8;
     }
 }
 
