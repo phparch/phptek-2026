@@ -5,18 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Tek 2026 - The Premier PHP Conference</title>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ config('app.url') }}">
+    <meta name="keywords" content="php, web development, conference">
+    <link rel="icon" href=" {{ asset('/favicon.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('/favicon-16x16.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('/favicon-32x32.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('/android-chrome-192x192.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('/android-chrome-512x512.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('/apple-touch-icon.png') }}" type="image/x-icon">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="PHP Tek 2026 - The Premier PHP Conference"/>
     <meta name="description"
           content="Join us at PHP Tek 2026, the premier PHP conference featuring expert speakers, hands-on workshops, and networking opportunities.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
-        rel="stylesheet">
-    @vite('resources/css/app.css')
-    @vite('resources/js/app.js')
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
+            rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script>
-        // Prevent FOUC by setting theme immediately
-        (function() {
+        (function () {
             if (localStorage.getItem('darkMode') !== 'false') {
                 document.documentElement.classList.add('dark');
             }
@@ -27,28 +37,28 @@
 <body class="font-sans bg-white dark:bg-slate-900 text-gray-900 dark:text-slate-100 transition-colors duration-300 pt-20">
 
 <!-- Fixed navigation -->
-<x-navigation />
+<x-navigation/>
 
 <!-- Hero section -->
 <header class="relative overflow-hidden">
-    <x-hero-section :conference="null" />
+    <x-hero-section :conference="null"/>
 </header>
 
-<x-about-section />
+<x-about-section/>
 
-<x-speakers-section />
+<x-speakers-section/>
 
-<x-schedule-section />
+<x-schedule-section/>
 
-<x-venue-section />
+<x-venue-section/>
 
-<x-sponsors-section />
+<x-sponsors-section/>
 
-<x-registration-section />
+<x-registration-section/>
 
-<x-newsletter-section />
+<x-newsletter-section/>
 
-<x-footer />
+<x-footer/>
 <!-- Back to top button -->
 <button id="backToTop"
         x-data="{ showButton: false }"
@@ -62,7 +72,6 @@
     </svg>
 </button>
 
-@vite('resources/js/app.js')
 <script>
     // Dark mode is now the default - add dark class by default
     if (localStorage.getItem('darkMode') === null) {
