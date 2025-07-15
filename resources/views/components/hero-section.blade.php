@@ -42,8 +42,8 @@
                 </div>
             </div>
             <div class="relative hidden md:block">
-                <div class="absolute -top-10 -right-10 w-72 h-72 bg-tek-blue-200/30 dark:bg-tek-blue-800/20 rounded-full filter blur-3xl opacity-70"></div>
-                <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-tek-orange-200/30 dark:bg-tek-orange-800/20 rounded-full filter blur-3xl opacity-70"></div>
+                <div class="absolute -top-10 -right-10 w-72 h-72 bg-tek-blue-200/60 dark:bg-tek-blue-800/20 rounded-full filter blur-3xl opacity-80 dark:opacity-70"></div>
+                <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-tek-orange-200/60 dark:bg-tek-orange-800/20 rounded-full filter blur-3xl opacity-80 dark:opacity-70"></div>
                 <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070&auto=format&fit=crop" alt="PHP Tek Conference" class="rounded-2xl shadow-2xl relative z-10 transform hover:-translate-y-2 transition-transform duration-300">
             </div>
         </div>
@@ -51,8 +51,11 @@
 
     <!-- Decorative elements -->
     <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div class="absolute -top-24 -left-24 w-96 h-96 bg-tek-orange-100/30 dark:bg-tek-orange-900/10 rounded-full"></div>
-        <div class="absolute top-1/3 right-0 w-64 h-64 bg-tek-blue-100/30 dark:bg-tek-blue-900/10 rounded-full"></div>
-        <div class="absolute bottom-0 left-1/4 w-80 h-80 bg-tek-orange-100/30 dark:bg-tek-orange-900/10 rounded-full"></div>
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-tek-orange-100/50 dark:bg-tek-orange-900/10 rounded-full"></div>
+        <div class="absolute top-1/3 right-0 w-64 h-64 bg-tek-blue-100/50 dark:bg-tek-blue-900/10 rounded-full"></div>
+        <div class="absolute bottom-0 left-1/4 w-80 h-80 bg-tek-orange-100/50 dark:bg-tek-orange-900/10 rounded-full"></div>
+        <!-- Additional light mode circles -->
+        <div class="absolute top-1/2 left-1/3 w-48 h-48 bg-tek-blue-50/70 dark:bg-tek-blue-900/5 rounded-full filter blur-2xl"></div>
+        <div class="absolute bottom-1/4 right-1/3 w-32 h-32 bg-tek-orange-50/80 dark:bg-tek-orange-900/5 rounded-full filter blur-xl"></div>
     </div>
 </div>

@@ -14,11 +14,17 @@
         rel="stylesheet">
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
+    <script>
+        // Prevent FOUC by setting theme immediately
+        (function() {
+            if (localStorage.getItem('darkMode') !== 'false') {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body x-data="{ darkMode: localStorage.getItem('darkMode') !== 'false' }"
-      :class="{ 'dark': darkMode }"
-      class="font-sans bg-white dark:bg-slate-900 text-gray-900 dark:text-slate-100 transition-colors duration-300 pt-20">
+<body class="font-sans bg-white dark:bg-slate-900 text-gray-900 dark:text-slate-100 transition-colors duration-300 pt-20">
 
 <!-- Fixed navigation -->
 <x-navigation />

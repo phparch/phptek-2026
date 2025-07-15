@@ -1,6 +1,13 @@
 <!-- About section -->
-<section id="about" class="py-20 bg-gray-50 dark:bg-slate-800 transition-colors duration-300">
-    <div class="container mx-auto px-6">
+<section id="about" class="py-20 bg-gray-50 dark:bg-slate-800 transition-colors duration-300 relative overflow-hidden">
+    <!-- Decorative background circles -->
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+        <div class="absolute -top-20 -right-20 w-80 h-80 bg-tek-blue-100/40 dark:bg-tek-blue-900/8 rounded-full filter blur-3xl"></div>
+        <div class="absolute bottom-0 -left-16 w-60 h-60 bg-tek-orange-100/40 dark:bg-tek-orange-900/8 rounded-full filter blur-2xl"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-tek-blue-50/60 dark:bg-tek-blue-900/5 rounded-full filter blur-xl"></div>
+    </div>
+    
+    <div class="container mx-auto px-6 relative z-10">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">About PHP Tek 2026</h2>
             <p class="text-gray-600 dark:text-slate-300 max-w-2xl mx-auto">

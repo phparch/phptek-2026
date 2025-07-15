@@ -73,10 +73,14 @@
             </div>
 
             <div class="relative">
-                <div class="absolute -top-6 -right-6 w-64 h-64 bg-tek-blue-200/30 dark:bg-tek-blue-800/20 rounded-full filter blur-xl opacity-70"></div>
+                <div class="absolute -top-6 -right-6 w-64 h-64 bg-tek-blue-200/60 dark:bg-tek-blue-800/20 rounded-full filter blur-xl opacity-80 dark:opacity-70"></div>
+                <!-- Additional light mode circles -->
+                <div class="absolute -top-16 -left-8 w-40 h-40 bg-tek-orange-100/50 dark:bg-tek-orange-900/5 rounded-full filter blur-2xl"></div>
+                <div class="absolute top-1/3 -right-12 w-32 h-32 bg-tek-blue-100/60 dark:bg-tek-blue-900/5 rounded-full filter blur-xl"></div>
                 <img src="https://images.unsplash.com/photo-1577959198872-6ffb4b242c9a?q=80&w=2071&auto=format&fit=crop"
                      alt="Tech Convention Center" class="rounded-xl shadow-xl relative z-10">
-                <div class="absolute -bottom-6 -left-6 w-64 h-64 bg-tek-orange-200/30 dark:bg-tek-orange-800/20 rounded-full filter blur-xl opacity-70"></div>
+                <div class="absolute -bottom-6 -left-6 w-64 h-64 bg-tek-orange-200/60 dark:bg-tek-orange-800/20 rounded-full filter blur-xl opacity-80 dark:opacity-70"></div>
+                <div class="absolute bottom-1/4 -right-4 w-28 h-28 bg-tek-blue-50/80 dark:bg-tek-blue-900/5 rounded-full filter blur-lg"></div>
             </div>
         </div>
     </div>
