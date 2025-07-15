@@ -1,5 +1,14 @@
 <!-- Navigation -->
-<nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm transition-colors duration-300 border-b border-gray-200/50 dark:border-slate-700/50">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm transition-colors duration-300 border-b border-gray-200/50 dark:border-slate-700/50"
+     x-data="{ 
+         darkMode: localStorage.getItem('darkMode') !== 'false',
+         toggleTheme() {
+             this.darkMode = !this.darkMode;
+             localStorage.setItem('darkMode', this.darkMode);
+             document.documentElement.classList.toggle('dark', this.darkMode);
+         }
+     }"
+     x-init="document.documentElement.classList.toggle('dark', darkMode)">
     <div class="container mx-auto px-6 py-4">
         <div class="flex items-center justify-between">
             <div class="flex items-center">
@@ -19,7 +28,7 @@
                 <a href="#register" class="bg-tek-orange-900 dark:bg-tek-orange-600 text-white px-5 py-2 rounded-lg hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all shadow-md hover:shadow-lg">Register Now</a>
 
                 <!-- Theme toggle button -->
-                <button @click="darkMode = !darkMode; localStorage.setItem('darkMode', darkMode)" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 focus:outline-none">
+                <button @click="toggleTheme()" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 focus:outline-none">
                     <svg x-show="!darkMode" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
                     </svg>
@@ -58,7 +67,7 @@
 
                     <div class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-slate-600">
                         <span class="text-sm text-gray-600 dark:text-slate-400">Theme</span>
-                        <button @click="darkMode = !darkMode; localStorage.setItem('darkMode', darkMode)" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 focus:outline-none">
+                        <button @click="toggleTheme()" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 focus:outline-none">
                             <svg x-show="!darkMode" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
                             </svg>
