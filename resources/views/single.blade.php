@@ -46,9 +46,9 @@
 
 <x-about-section/>
 
-<x-speakers-section/>
+{{-- <x-speakers-section/>  --}}
 
-<x-schedule-section/>
+{{-- <x-schedule-section/> --}}
 
 <x-venue-section/>
 
@@ -56,7 +56,7 @@
 
 <x-registration-section/>
 
-<x-newsletter-section/>
+{{-- <x-newsletter-section/> --}}
 
 <x-footer/>
 <!-- Back to top button -->

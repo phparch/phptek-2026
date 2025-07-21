@@ -5,8 +5,8 @@
             <div>
                 <h2 class="text-3xl md:text-4xl font-display font-bold mb-6">Conference Venue</h2>
                 <p class="text-gray-600 dark:text-slate-300 mb-6">
-                    PHP Tek 2026 will be held at the prestigious Tech Convention Center in Chicago, a state-of-the-art
-                    facility designed to provide the perfect environment for learning and networking.
+                    PHP Tek 2026 will be returning to Chicago and the Sheraton O’Hare Hotel. This hotel is conveniently
+                    located by the airport and offers a complimentary airport shuttle.
                 </p>
 
                 <div class="space-y-4 mb-8">
@@ -22,9 +22,8 @@
                         <div>
                             <h3 class="font-bold text-lg">Location</h3>
                             <p class="text-gray-600 dark:text-slate-300">
-                                Tech Convention Center<br>
-                                123 Innovation Drive<br>
-                                Chicago, IL 60601
+                                6501 Mannheim Road<br>
+                                Rosemont, IL, 60018
                             </p>
                         </div>
                     </div>
@@ -39,8 +38,7 @@
                         <div>
                             <h3 class="font-bold text-lg">Accommodation</h3>
                             <p class="text-gray-600 dark:text-slate-300">
-                                Special rates available at partner hotels within walking distance of the venue. Booking
-                                links will be provided upon registration.
+                                Special rates available for confrence attendees
                             </p>
                         </div>
                     </div>
@@ -55,8 +53,8 @@
                         <div>
                             <h3 class="font-bold text-lg">Transportation</h3>
                             <p class="text-gray-600 dark:text-slate-300">
-                                The venue is easily accessible via public transportation and is just 20 minutes from
-                                Chicago O'Hare International Airport.
+                                This hotel is conveniently located near the Chicago O'Hare Internation Airport
+                                and offers a complimentary airport shuttle.
                             </p>
                         </div>
                     </div>
@@ -64,7 +62,8 @@
 
                 <a href="#" class="inline-flex items-center text-tek-blue-700 dark:text-tek-blue-400 font-medium">
                     View Venue Details
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20"
+                         fill="currentColor">
                         <path fill-rule="evenodd"
                               d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                               clip-rule="evenodd"/>
@@ -73,14 +72,19 @@
             </div>
 
             <div class="relative">
-                <div class="absolute -top-6 -right-6 w-64 h-64 bg-tek-blue-200/60 dark:bg-tek-blue-800/20 rounded-full filter blur-xl opacity-80 dark:opacity-70"></div>
+                <div
+                    class="absolute -top-6 -right-6 w-64 h-64 bg-tek-blue-200/60 dark:bg-tek-blue-800/20 rounded-full filter blur-xl opacity-80 dark:opacity-70"></div>
                 <!-- Additional light mode circles -->
-                <div class="absolute -top-16 -left-8 w-40 h-40 bg-tek-orange-100/50 dark:bg-tek-orange-900/5 rounded-full filter blur-2xl"></div>
-                <div class="absolute top-1/3 -right-12 w-32 h-32 bg-tek-blue-100/60 dark:bg-tek-blue-900/5 rounded-full filter blur-xl"></div>
-                <img src="https://images.unsplash.com/photo-1577959198872-6ffb4b242c9a?q=80&w=2071&auto=format&fit=crop"
+                <div
+                    class="absolute -top-16 -left-8 w-40 h-40 bg-tek-orange-100/50 dark:bg-tek-orange-900/5 rounded-full filter blur-2xl"></div>
+                <div
+                    class="absolute top-1/3 -right-12 w-32 h-32 bg-tek-blue-100/60 dark:bg-tek-blue-900/5 rounded-full filter blur-xl"></div>
+                <img src="https://cdn.phparch.social/phptek2026/images/sheraton-chicago.png"
                      alt="Tech Convention Center" class="rounded-xl shadow-xl relative z-10">
-                <div class="absolute -bottom-6 -left-6 w-64 h-64 bg-tek-orange-200/60 dark:bg-tek-orange-800/20 rounded-full filter blur-xl opacity-80 dark:opacity-70"></div>
-                <div class="absolute bottom-1/4 -right-4 w-28 h-28 bg-tek-blue-50/80 dark:bg-tek-blue-900/5 rounded-full filter blur-lg"></div>
+                <div
+                    class="absolute -bottom-6 -left-6 w-64 h-64 bg-tek-orange-200/60 dark:bg-tek-orange-800/20 rounded-full filter blur-xl opacity-80 dark:opacity-70"></div>
+                <div
+                    class="absolute bottom-1/4 -right-4 w-28 h-28 bg-tek-blue-50/80 dark:bg-tek-blue-900/5 rounded-full filter blur-lg"></div>
             </div>
         </div>
     </div>
