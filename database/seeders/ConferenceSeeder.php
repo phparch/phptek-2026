@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Conference;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class ConferenceSeeder extends Seeder
@@ -16,7 +15,7 @@ class ConferenceSeeder extends Seeder
         // Check if the conference with the specified UUID already exists
         $conferenceUuid = config('tek.conference.uuid');
 
-        if (!Conference::where('uuid', $conferenceUuid)->exists()) {
+        if (! Conference::where('uuid', $conferenceUuid)->exists()) {
             Conference::create([
                 'uuid' => $conferenceUuid,
                 'name' => 'PHP TEK 2026',

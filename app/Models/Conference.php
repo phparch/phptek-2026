@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 
@@ -34,8 +33,6 @@ class Conference extends Model
 
     /**
      * Get the conference name.
-     *
-     * @return string
      */
     public function getName(): string
     {
@@ -44,8 +41,6 @@ class Conference extends Model
 
     /**
      * Get the venue name.
-     *
-     * @return string|null
      */
     public function getVenueName(): ?string
     {
@@ -54,8 +49,6 @@ class Conference extends Model
 
     /**
      * Get the venue address.
-     *
-     * @return string|null
      */
     public function getVenueAddress(): ?string
     {
@@ -80,9 +73,6 @@ class Conference extends Model
 
     /**
      * Get the formatted start date.
-     *
-     * @param string $format
-     * @return string|null
      */
     public function formattedStartDate(string $format = 'Y-m-d'): ?string
     {
@@ -91,9 +81,6 @@ class Conference extends Model
 
     /**
      * Get the formatted end date.
-     *
-     * @param string $format
-     * @return string|null
      */
     public function formattedEndDate(string $format = 'Y-m-d'): ?string
     {
@@ -102,12 +89,10 @@ class Conference extends Model
 
     /**
      * Get the conference duration in days.
-     *
-     * @return int|null
      */
     public function getDurationInDays(): ?int
     {
-        if (!$this->start_date || !$this->end_date) {
+        if (! $this->start_date || ! $this->end_date) {
             return null;
         }
 
@@ -116,28 +101,25 @@ class Conference extends Model
 
     /**
      * Check if the conference is currently ongoing.
-     *
-     * @return bool
      */
     public function isOngoing(): bool
     {
-        if (!$this->start_date || !$this->end_date) {
+        if (! $this->start_date || ! $this->end_date) {
             return false;
         }
 
         $now = now();
+
         return $now->gte($this->start_date) && $now->lte($this->end_date);
     }
 
     /**
      * Get the formatted date range in the format "May 19th - 21st, 2026".
      * If start and end dates are in the same month and year, only the day is shown for the end date.
-     *
-     * @return string|null
      */
     public function getFormattedDateRange(): ?string
     {
-        if (!$this->start_date || !$this->end_date) {
+        if (! $this->start_date || ! $this->end_date) {
             return null;
         }
 
@@ -160,9 +142,6 @@ class Conference extends Model
 
     /**
      * Get the ordinal suffix for a day number (st, nd, rd, th).
-     *
-     * @param int $day
-     * @return string
      */
     private function getDayOrdinal(int $day): string
     {

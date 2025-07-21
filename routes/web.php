@@ -6,6 +6,7 @@ use Livewire\Volt\Volt;
 
 Route::get('/', function () {
     $conference = Conference::first();
+
     return view('single', compact('conference'));
 })->name('home');
 
@@ -17,4 +18,4 @@ Route::middleware(['auth'])->group(function () {
     Volt::route('settings/appearance', 'settings.appearance')->name('settings.appearance');
 });
 
-require __DIR__ . '/auth.php';
+require __DIR__.'/auth.php';
