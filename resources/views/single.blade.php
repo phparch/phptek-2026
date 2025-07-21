@@ -22,8 +22,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
-            rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
+        rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script>
         (function () {
@@ -34,7 +34,8 @@
     </script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body class="font-sans bg-white dark:bg-slate-900 text-gray-900 dark:text-slate-100 transition-colors duration-300 pt-20">
+<body
+    class="font-sans bg-white dark:bg-slate-900 text-gray-900 dark:text-slate-100 transition-colors duration-300 pt-20">
 
 <!-- Fixed navigation -->
 <x-navigation/>
@@ -59,6 +60,9 @@
 {{-- <x-newsletter-section/> --}}
 
 <x-footer/>
+
+<x-code-of-conduct-modal/>
+
 <!-- Back to top button -->
 <button id="backToTop"
         x-data="{ showButton: false }"

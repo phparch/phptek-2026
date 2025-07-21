@@ -81,9 +81,10 @@
             <div>
                 <h4 class="font-bold text-lg mb-4">Resources</h4>
                 <ul class="space-y-2">
-                    <li><a href="#"
-                           class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Code
-                            of Conduct</a></li>
+                    <li><button type="button" 
+                           onclick="window.dispatchEvent(new CustomEvent('open-coc-modal'))"
+                           class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors cursor-pointer text-left">Code
+                            of Conduct</button></li>
                     <li><a href="#"
                            class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">FAQs</a>
                     </li>
