@@ -27,8 +27,13 @@ Before you begin, ensure you have the following installed:
 - PHP 8.2 or higher
 - Composer
 - Node.js and npm
-- MySQL or MariaDB
 - Git
+
+### Important thing to note
+
+Certain components are commented out like schedule, speakers, and sponsors. These are committed out so that when new
+deployments are done those components don't display until we have content to add to them. If you are interested in
+working these components you are welcomed to do so.
 
 ## Installation
 

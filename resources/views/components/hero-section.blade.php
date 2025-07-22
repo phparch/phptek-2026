@@ -25,32 +25,32 @@
                        class="bg-tek-orange-900 dark:bg-tek-orange-600 text-white px-8 py-3 rounded-lg text-center font-medium hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all shadow-md hover:shadow-lg">
                         Register Now
                     </a>
-                    <a href="#speakers"
-                       class="border border-tek-blue-300 dark:border-tek-blue-700 text-tek-blue-800 dark:text-tek-blue-300 px-8 py-3 rounded-lg text-center font-medium hover:bg-tek-blue-50 dark:hover:bg-tek-blue-800/20 transition-all">
-                        View Speakers
-                    </a>
+                    {{--                    <a href="#speakers"--}}
+                    {{--                       class="border border-tek-blue-300 dark:border-tek-blue-700 text-tek-blue-800 dark:text-tek-blue-300 px-8 py-3 rounded-lg text-center font-medium hover:bg-tek-blue-50 dark:hover:bg-tek-blue-800/20 transition-all">--}}
+                    {{--                        View Speakers--}}
+                    {{--                    </a>--}}
                 </div>
-                <div class="pt-4">
-                    <div class="flex items-center">
-                        <div class="flex -space-x-2">
-                            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Attendee"
-                                 class="w-10 h-10 rounded-full border-2 border-white dark:border-background-dark">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Attendee"
-                                 class="w-10 h-10 rounded-full border-2 border-white dark:border-background-dark">
-                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Attendee"
-                                 class="w-10 h-10 rounded-full border-2 border-white dark:border-background-dark">
-                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Attendee"
-                                 class="w-10 h-10 rounded-full border-2 border-white dark:border-background-dark">
-                            <div
-                                class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 border-2 border-white dark:border-background-dark text-sm font-medium">
-                                +2K
-                            </div>
-                        </div>
-                        <p class="ml-4 text-sm text-gray-600 dark:text-slate-300">
-                            <span class="font-medium">2,000+</span> developers already registered
-                        </p>
-                    </div>
-                </div>
+                {{--                <div class="pt-4">--}}
+                {{--                    <div class="flex items-center">--}}
+                {{--                        <div class="flex -space-x-2">--}}
+                {{--                            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Attendee"--}}
+                {{--                                 class="w-10 h-10 rounded-full border-2 border-white dark:border-background-dark">--}}
+                {{--                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Attendee"--}}
+                {{--                                 class="w-10 h-10 rounded-full border-2 border-white dark:border-background-dark">--}}
+                {{--                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Attendee"--}}
+                {{--                                 class="w-10 h-10 rounded-full border-2 border-white dark:border-background-dark">--}}
+                {{--                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Attendee"--}}
+                {{--                                 class="w-10 h-10 rounded-full border-2 border-white dark:border-background-dark">--}}
+                {{--                            <div--}}
+                {{--                                class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 border-2 border-white dark:border-background-dark text-sm font-medium">--}}
+                {{--                                +2K--}}
+                {{--                            </div>--}}
+                {{--                        </div>--}}
+                {{--                        <p class="ml-4 text-sm text-gray-600 dark:text-slate-300">--}}
+                {{--                            <span class="font-medium">2,000+</span> developers already registered--}}
+                {{--                        </p>--}}
+                {{--                    </div>--}}
+                {{--                </div>--}}
             </div>
             <div class="relative hidden md:block">
                 <div

@@ -53,7 +53,7 @@
 
 <x-venue-section/>
 
-<x-sponsors-section/>
+{{--<x-sponsors-section/>--}}
 
 <x-registration-section/>
 
@@ -61,7 +61,10 @@
 
 <x-footer/>
 
-<x-code-of-conduct-modal/>
+<x-modals.code-of-conduct-modal/>
+<x-modals.privacy-policy-modal/>
+<x-modals.cookie-policy-modal/>
+
 
 <!-- Back to top button -->
 <button id="backToTop"
