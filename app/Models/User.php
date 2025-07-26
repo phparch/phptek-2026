@@ -22,6 +22,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'uuid',
     ];
 
     /**
@@ -45,6 +46,29 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    /**
+     * Boot the model and set the UUID when creating.
+     */
+    protected static function boot(): void
+    {
+        parent::boot();
+
+        static::creating(function ($model) {
+            if (empty($model->uuid)) {
+                $model->uuid = (string) Str::uuid();
+            }
+        });
+    }
+
+    /**
+     * Get the conferences associated with this user.
+     */
+    public function conferences(): BelongsToMany
+    {
+        return $this->belongsToMany(Conference::class, 'conference_user', 'user_uuid', 'conference_uuid', 'uuid', 'uuid')
+            ->withTimestamps();
     }
 
     /**

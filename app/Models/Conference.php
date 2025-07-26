@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Carbon;
 
 class Conference extends Model
@@ -159,5 +160,24 @@ class Conference extends Model
             default:
                 return 'th';
         }
+    }
+
+    /**
+     * Get the sponsors associated with this conference.
+     */
+    public function sponsors(): BelongsToMany
+    {
+        return $this->belongsToMany(Sponsor::class, 'conference_sponsor', 'conference_uuid', 'sponsor_uuid', 'uuid', 'uuid')
+            ->withPivot('sponsorship_level')
+            ->withTimestamps();
+    }
+
+    /**
+     * Get the users associated with this conference.
+     */
+    public function users(): BelongsToMany
+    {
+        return $this->belongsToMany(User::class, 'conference_user', 'conference_uuid', 'user_uuid', 'uuid', 'uuid')
+            ->withTimestamps();
     }
 }

@@ -95,9 +95,9 @@
                     <li><a href="#venue"
                            class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Venue</a>
                     </li>
-                    {{--                    <li><a href="#sponsors"--}}
-                    {{--                           class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Sponsors</a>--}}
-                    {{--                    </li>--}}
+                    <li><a href="#sponsors"
+                           class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Sponsors</a>
+                    </li>
                     <li><a href="#register"
                            class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Register</a>
                     </li>

@@ -29,7 +29,7 @@ class ComponentsTest extends TestCase
         $view->assertSee('PHP Tek Conference', false);
         $view->assertSee('Code', false);
         $view->assertSee('Conduct', false);
-        $view->assertSee('&copy; ' . date('Y'), false);
+        $view->assertSee('&copy; '.date('Y'), false);
     }
 
     public function test_about_section_component_renders(): void
@@ -63,8 +63,22 @@ class ComponentsTest extends TestCase
 
     public function test_code_of_conduct_modal_component_renders(): void
     {
-        $view = $this->blade('<x-code-of-conduct-modal/>');
+        $view = $this->blade('<x-modals.code-of-conduct-modal/>');
 
         $view->assertSee('Code of Conduct', false);
+    }
+
+    public function test_code_of_privacy_policy_modal_component_renders(): void
+    {
+        $view = $this->blade('<x-modals.privacy-policy-modal/>');
+
+        $view->assertSee('Privacy Policy', false);
+    }
+
+    public function test_code_of_cookie_policy_modal_component_renders(): void
+    {
+        $view = $this->blade('<x-modals.cookie-policy-modal/>');
+
+        $view->assertSee('Cookie Policy', false);
     }
 }

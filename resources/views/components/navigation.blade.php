@@ -30,7 +30,8 @@
                 {{--                <a href="#schedule" class="font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Schedule</a>--}}
                 <a href="#venue"
                    class="font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Venue</a>
-                {{--                <a href="#sponsors" class="font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Sponsors</a>--}}
+                <a href="#sponsors"
+                   class="font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Sponsors</a>
                 <a href="#register"
                    class="bg-tek-orange-900 dark:bg-tek-orange-600 text-white px-5 py-2 rounded-lg hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all shadow-md hover:shadow-lg">Register
                     Now</a>
@@ -80,7 +81,8 @@
                     {{--                    <a href="#schedule" @click="mobileMenu = false" class="block font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Schedule</a>--}}
                     <a href="#venue" @click="mobileMenu = false"
                        class="block font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Venue</a>
-                    {{--                    <a href="#sponsors" @click="mobileMenu = false" class="block font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Sponsors</a>--}}
+                    <a href="#sponsors" @click="mobileMenu = false"
+                       class="block font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Sponsors</a>
                     <a href="#register" @click="mobileMenu = false"
                        class="block bg-tek-orange-900 dark:bg-tek-orange-600 text-white px-5 py-2 rounded-lg text-center">Register
                         Now</a>

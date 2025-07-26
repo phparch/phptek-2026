@@ -22,5 +22,17 @@ class DatabaseSeeder extends Seeder
 
         // Call the ConferenceSeeder
         $this->call(ConferenceSeeder::class);
+
+        // Call the SponsorSeeder
+        $this->call(SponsorSeeder::class);
+
+        // Call the ConferenceSponsorSeeder
+        $this->call(ConferenceSponsorSeeder::class);
+
+        // Call the UserSeeder
+        $this->call(UserSeeder::class);
+
+        // Call the ConferenceUserSeeder
+        $this->call(ConferenceUserSeeder::class);
     }
 }

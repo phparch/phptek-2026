@@ -64,7 +64,7 @@ class SinglePageTest extends TestCase
 
         // Check for content that would be rendered by the footer
         $response->assertSee('PHP Tek Conference', false);
-        $response->assertSee('&copy; ' . date('Y'), false);
+        $response->assertSee('&copy; '.date('Y'), false);
 
         // Check for content that would be rendered by the code of conduct modal
         $response->assertSee('Code of Conduct', false);

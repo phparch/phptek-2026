@@ -128,3 +128,19 @@ Tests are organized with **Pest PHP**:
 - `config/tek.php`: Conference-specific configuration
 - `composer.json`: Development scripts and dependencies
 - `database/migrations/2025_06_02_214425_create_conferences_table.php`: Conference schema
+## Development Permissions
+
+Claude has full permission to:
+- **Edit any existing files** without asking for permission first
+- **Create new files and directories** as needed for implementation
+- **Run migrations and seeders** to update database structure
+- **Make structural changes** to improve code organization
+- **Create new components, models, controllers** as required
+- **Update configuration files** and environment settings
+- **Modify database schemas** through migrations
+- **Add new routes, views, and assets** as needed
+
+**Note**: Claude will still explain what changes are being made and why, but can proceed with implementation immediately without waiting for approval on each file modification.
+
+## Coding Standards
+When working on this Laravel/PHP project, first read the coding guidelines at @laravel-php-guidelines.md
