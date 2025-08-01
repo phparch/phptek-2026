@@ -115,9 +115,13 @@
                             of Conduct
                         </button>
                     </li>
-                    <li><a href="#"
-                           class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Travel
-                            Information</a></li>
+                    <li>
+                        <button type="button"
+                                onclick="window.dispatchEvent(new CustomEvent('open-travel-modal'))"
+                                class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors cursor-pointer text-left">
+                            Travel Information
+                        </button>
+                    </li>
                 </ul>
             </div>
 
@@ -133,14 +137,6 @@
                         </svg>
                         <span class="text-gray-600 dark:text-slate-300">tek@phparch.com</span>
                     </li>
-                    {{--
-                    <li class="flex items-start">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600 dark:text-slate-400 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                        </svg>
-                        <span class="text-gray-600 dark:text-slate-300">+1 (555) 123-4567</span>
-                    </li>
-                    --}}
                     <li class="flex items-start">
                         <svg xmlns="http://www.w3.org/2000/svg"
                              class="h-5 w-5 text-gray-600 dark:text-slate-400 mr-2 mt-0.5" fill="none"

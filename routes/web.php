@@ -1,10 +1,9 @@
 <?php
 
-use App\Models\Conference;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    $conference = Conference::first();
+    $conference = app('conference');
 
-    return view('single', compact('conference'));
+    return view('welcome', compact('conference'));
 })->name('home');
