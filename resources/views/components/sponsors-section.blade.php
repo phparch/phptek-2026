@@ -2,9 +2,9 @@
 <section id="sponsors" class="py-20 bg-gray-50 dark:bg-slate-800 transition-colors duration-300">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Our Sponsors</h2>
+            <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Our Partners</h2>
             <p class="text-gray-600 dark:text-slate-300 max-w-2xl mx-auto">
-                PHP Tek 2026 is made possible thanks to the support of our amazing sponsors.
+                PHP Tek 2026 is made possible thanks to the support of our amazing partners.
             </p>
         </div>
 
@@ -58,10 +58,10 @@
 
         <div class="text-center mt-16">
             <p class="text-gray-600 dark:text-slate-300 mb-4">
-                Interested in sponsoring PHP Tek 2026?
+                Interested in partnering with us for PHP Tek 2026?
             </p>
-            <a href="#" class="inline-flex items-center text-tek-blue-700 dark:text-tek-blue-400 font-medium">
-                View Sponsorship Opportunities
+            <a href="https://phpa.me/partner-program" class="inline-flex items-center text-tek-blue-700 dark:text-tek-blue-400 font-medium">
+                View Partnership Opportunities
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd"
                           d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
