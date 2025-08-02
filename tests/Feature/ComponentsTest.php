@@ -16,7 +16,7 @@ class ComponentsTest extends TestCase
         $view->assertSee('PHP Tek 2026', false);
         $view->assertSee('About', false);
         $view->assertSee('Venue', false);
-        $view->assertSee('Sponsors', false);
+        $view->assertSee('Partners', false);
         $view->assertSee('Register', false);
     }
 
