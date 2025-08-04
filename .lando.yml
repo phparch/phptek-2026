@@ -1,0 +1,19 @@
+name: phptek-2026
+recipe: laravel
+config:
+  php: '8.2'
+  database: mariadb
+  webroot: public
+
+services:
+  database:
+    type: mariadb
+    portforward: 3306
+
+tooling:
+  npm:
+    service: node
+  node:
+    service: node
+  yarn:
+    service: node
