@@ -20,7 +20,7 @@ return new class extends Migration
                 $table->string('website');
                 $table->string('slug')->unique();
                 $table->string('logo')->nullable();
-                $table->string('description')->nullable();
+                $table->text('description')->nullable();
                 $table->json('socials')->nullable();
                 $table->timestamps();
             });
