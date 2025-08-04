@@ -2,8 +2,7 @@
 
 # PHP Tek 2026 Conference Website
 
-This repository contains the official website for the PHP Tek 2026 conference, a premier event for PHP and web
-development professionals.
+This repository contains the official website for the PHP Tek 2026 conference, a premier event for PHP and web development professionals.
 
 ## About the Project
 
