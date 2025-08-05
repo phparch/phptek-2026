@@ -8,8 +8,8 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::table('', function (Blueprint $table) {
-            if (! Schema::hasTable('conference_sponsor')) {
+        if (! Schema::hasTable('conference_sponsor')) {
+            Schema::table('', function (Blueprint $table) {
                 Schema::create('conference_sponsor', function (Blueprint $table) {
                     $table->id();
                     $table->uuid('sponsor_uuid');
@@ -18,8 +18,8 @@ return new class extends Migration
                     $table->string('sponsorship_level_details')->nullable(); // This is for level `other` so can be something like 'coffee'
                     $table->timestamps();
                 });
-            }
-        });
+            });
+        }
     }
 
     public function down(): void

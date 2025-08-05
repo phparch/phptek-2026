@@ -1,5 +1,5 @@
-<!-- Sponsors section -->
-<section id="sponsors" class="py-20 bg-gray-50 dark:bg-slate-800 transition-colors duration-300">
+<!-- Partners section -->
+<section id="partners" class="py-20 bg-gray-50 dark:bg-slate-800 transition-colors duration-300">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Our Partners</h2>
@@ -13,20 +13,28 @@
                 <div class="text-center">
                     <h3 class="text-xl font-bold mb-6">{{ $getLevelDisplayName($level) }}</h3>
                     <div class="flex justify-center">
-                        <div class="grid {{ $getGridClasses($level) }} gap-6 mx-auto">
-                            @foreach($sponsors as $sponsor)
-                                <div
-                                    class="bg-white dark:bg-slate-700 rounded-xl shadow-md dark:shadow-slate-900/50 {{ $getCardClasses($level) }} cursor-pointer transition-transform hover:scale-105"
-                                    onclick="openSponsorModal('{{ $sponsor->uuid }}')"
-                                    data-sponsor-uuid="{{ $sponsor->uuid }}">
-                                    <div class="flex flex-col items-center justify-center h-full">
-                                        @if($sponsor->logo)
-                                            @if(str_starts_with($sponsor->logo, 'http'))
-                                                <img src="{{ $sponsor->logo }}" alt="{{ $sponsor->name }}"
-                                                     class="max-h-16 max-w-full object-contain mb-2">
-                                            @elseif(file_exists(public_path($sponsor->logo)))
-                                                <img src="{{ asset($sponsor->logo) }}" alt="{{ $sponsor->name }}"
-                                                     class="max-h-16 max-w-full object-contain mb-2">
+                        @if(count($sponsors) === 1)
+                            <div class="flex justify-center">
+                                @foreach($sponsors as $sponsor)
+                                    <div
+                                        class="bg-white dark:bg-slate-700 rounded-xl shadow-md dark:shadow-slate-900/50 {{ $getCardClasses($level) }} cursor-pointer transition-transform hover:scale-105"
+                                        onclick="openSponsorModal('{{ $sponsor->uuid }}')"
+                                        data-sponsor-uuid="{{ $sponsor->uuid }}">
+                                        <div class="flex flex-col items-center justify-center h-full">
+                                            @if($sponsor->logo)
+                                                @if(str_starts_with($sponsor->logo, 'http'))
+                                                    <img src="{{ $sponsor->logo }}" alt="{{ $sponsor->name }}"
+                                                         class="max-h-16 max-w-full object-contain mb-2">
+                                                @elseif(file_exists(public_path($sponsor->logo)))
+                                                    <img src="{{ asset($sponsor->logo) }}" alt="{{ $sponsor->name }}"
+                                                         class="max-h-16 max-w-full object-contain mb-2">
+                                                @else
+                                                    <div
+                                                        class="w-16 h-16 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-2">
+                                                        <span
+                                                            class="text-xs font-bold text-gray-500 dark:text-slate-400">LOGO</span>
+                                                    </div>
+                                                @endif
                                             @else
                                                 <div
                                                     class="w-16 h-16 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-2">
@@ -34,23 +42,56 @@
                                                         class="text-xs font-bold text-gray-500 dark:text-slate-400">LOGO</span>
                                                 </div>
                                             @endif
-                                        @else
-                                            <div
-                                                class="w-16 h-16 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-2">
-                                                <span
-                                                    class="text-xs font-bold text-gray-500 dark:text-slate-400">LOGO</span>
+                                            <div class="text-center">
+                                                <p class="font-semibold text-sm">{{ $sponsor->name }}</p>
+                                                @if($level === 'other' && $sponsor->pivot->sponsorship_level_details)
+                                                    <p class="text-xs text-gray-600 dark:text-slate-400 mt-1">{{ $sponsor->pivot->sponsorship_level_details }}</p>
+                                                @endif
                                             </div>
-                                        @endif
-                                        <div class="text-center">
-                                            <p class="font-semibold text-sm">{{ $sponsor->name }}</p>
-                                            @if($level === 'other' && $sponsor->pivot->sponsorship_level_details)
-                                                <p class="text-xs text-gray-600 dark:text-slate-400 mt-1">{{ $sponsor->pivot->sponsorship_level_details }}</p>
-                                            @endif
                                         </div>
                                     </div>
-                                </div>
-                            @endforeach
-                        </div>
+                                @endforeach
+                            </div>
+                        @else
+                            <div class="grid {{ $getGridClasses($level) }} gap-6 justify-items-center" style="max-width: fit-content;">
+                                @foreach($sponsors as $sponsor)
+                                    <div
+                                        class="bg-white dark:bg-slate-700 rounded-xl shadow-md dark:shadow-slate-900/50 {{ $getCardClasses($level) }} cursor-pointer transition-transform hover:scale-105"
+                                        onclick="openSponsorModal('{{ $sponsor->uuid }}')"
+                                        data-sponsor-uuid="{{ $sponsor->uuid }}">
+                                        <div class="flex flex-col items-center justify-center h-full">
+                                            @if($sponsor->logo)
+                                                @if(str_starts_with($sponsor->logo, 'http'))
+                                                    <img src="{{ $sponsor->logo }}" alt="{{ $sponsor->name }}"
+                                                         class="max-h-16 max-w-full object-contain mb-2">
+                                                @elseif(file_exists(public_path($sponsor->logo)))
+                                                    <img src="{{ asset($sponsor->logo) }}" alt="{{ $sponsor->name }}"
+                                                         class="max-h-16 max-w-full object-contain mb-2">
+                                                @else
+                                                    <div
+                                                        class="w-16 h-16 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-2">
+                                                        <span
+                                                            class="text-xs font-bold text-gray-500 dark:text-slate-400">LOGO</span>
+                                                    </div>
+                                                @endif
+                                            @else
+                                                <div
+                                                    class="w-16 h-16 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-2">
+                                                    <span
+                                                        class="text-xs font-bold text-gray-500 dark:text-slate-400">LOGO</span>
+                                                </div>
+                                            @endif
+                                            <div class="text-center">
+                                                <p class="font-semibold text-sm">{{ $sponsor->name }}</p>
+                                                @if($level === 'other' && $sponsor->pivot->sponsorship_level_details)
+                                                    <p class="text-xs text-gray-600 dark:text-slate-400 mt-1">{{ $sponsor->pivot->sponsorship_level_details }}</p>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        @endif
                     </div>
                 </div>
             @endforeach

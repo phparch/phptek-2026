@@ -11,14 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('conference_user', function (Blueprint $table) {
-            $table->id();
-            $table->uuid('conference_uuid');
-            $table->uuid('user_uuid');
-            $table->timestamps();
+        if (! Schema::hasTable('conference_user')) {
+            Schema::create('conference_user', function (Blueprint $table) {
+                $table->id();
+                $table->uuid('conference_uuid');
+                $table->uuid('user_uuid');
+                $table->timestamps();
 
-            $table->unique(['conference_uuid', 'user_uuid']);
-        });
+                $table->unique(['conference_uuid', 'user_uuid']);
+            });
+        }
     }
 
     /**

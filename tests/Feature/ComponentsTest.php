@@ -47,11 +47,11 @@ class ComponentsTest extends TestCase
         $view->assertSee('Venue', false);
     }
 
-    public function test_sponsors_section_component_renders(): void
+    public function test_partners_section_component_renders(): void
     {
-        $view = $this->blade('<x-sponsors-section/>');
+        $view = $this->blade('<x-partners-section/>');
 
-        $view->assertSee('Sponsors', false);
+        $view->assertSee('Partners', false);
     }
 
     public function test_registration_section_component_renders(): void
