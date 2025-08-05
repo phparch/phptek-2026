@@ -30,7 +30,7 @@
                 {{--                <a href="#schedule" class="font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Schedule</a>--}}
                 <a href="#venue"
                    class="font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Venue</a>
-                <a href="#sponsors"
+                <a href="#partners"
                    class="font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Partners</a>
                 
                 <!-- Share Button -->
@@ -85,7 +85,7 @@
                     {{--                    <a href="#schedule" @click="mobileMenu = false" class="block font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Schedule</a>--}}
                     <a href="#venue" @click="mobileMenu = false"
                        class="block font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Venue</a>
-                    <a href="#sponsors" @click="mobileMenu = false"
+                    <a href="#partners" @click="mobileMenu = false"
                        class="block font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Partners</a>
                     
                     <!-- Share Button for Mobile -->
