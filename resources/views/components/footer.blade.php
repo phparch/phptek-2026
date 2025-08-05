@@ -41,7 +41,7 @@
                                 d="M12 8 C9 2, 2 0, 1 4 c-1 2, 2 4, 5 4 -3 1-4 4-1 4 s6-3, 6-4 M12 8 C15 2, 22 0, 23 4 c1 2-2 4-5 4 3 1 4 4 1 4 s-6-3-6-4 "/>
                         </svg>
                     </a>
-                    <a href="https://www.facebook.com/events/1745614632842530/"
+                    <a href="https://www.facebook.com/events/1081030564171806/"
                        class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -97,7 +97,7 @@
                            class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Venue</a>
                     </li>
                     <li><a href="#sponsors"
-                           class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Sponsors</a>
+                           class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Partners</a>
                     </li>
                     <li><a href="#register"
                            class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Register</a>
@@ -136,7 +136,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
-                        <span class="text-gray-600 dark:text-slate-300">tek@phparch.com</span>
+                        <span class="text-gray-600 dark:text-slate-300"><a href="mailto:tek@phparch.com"
+                                                                           target="_blank">tek@phparch.com</a></span>
                     </li>
                     <li class="flex items-start">
                         <svg xmlns="http://www.w3.org/2000/svg"

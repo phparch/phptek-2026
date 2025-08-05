@@ -18,6 +18,6 @@ class SponsorSeeder extends Seeder
         // Additional sponsors for testing different levels
         Sponsor::factory()->count(8)->create();
 
-        $this->command->info('Sponsors seeded successfully');
+        $this->command->info('Partners seeded successfully');
     }
 }
