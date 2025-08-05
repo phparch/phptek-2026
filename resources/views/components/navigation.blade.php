@@ -32,6 +32,10 @@
                    class="font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Venue</a>
                 <a href="#sponsors"
                    class="font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Partners</a>
+                
+                <!-- Share Button -->
+                <x-share-button />
+                
                 <a href="#register"
                    class="bg-tek-orange-900 dark:bg-tek-orange-600 text-white px-5 py-2 rounded-lg hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all shadow-md hover:shadow-lg">Register
                     Now</a>
@@ -83,6 +87,12 @@
                        class="block font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Venue</a>
                     <a href="#sponsors" @click="mobileMenu = false"
                        class="block font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Partners</a>
+                    
+                    <!-- Share Button for Mobile -->
+                    <div class="py-2">
+                        <x-share-button />
+                    </div>
+                    
                     <a href="#register" @click="mobileMenu = false"
                        class="block bg-tek-orange-900 dark:bg-tek-orange-600 text-white px-5 py-2 rounded-lg text-center">Register
                         Now</a>
