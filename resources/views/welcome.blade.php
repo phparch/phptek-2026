@@ -94,5 +94,16 @@
         document.documentElement.classList.add('dark');
     }
 </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V6GPXQJF9F"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-V6GPXQJF9F');
+</script>
+
 </body>
 </html>
