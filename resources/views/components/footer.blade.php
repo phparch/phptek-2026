@@ -33,11 +33,12 @@
                     </a>
                     <a href="https://bsky.app/profile/phparch.com"
                        class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 12"
                              fill="currentColor"
                              class="h-5 w-5">
+                            <!-- Bluesky Logo - Butterfly -->
                             <path
-                                d="M12 7.8c-.7-1.2-2.5-3.4-4.2-4.5-1.6-1.1-2.3-.9-2.6-.7-.5.2-.6.9-.6 1.3 0 .4.2 3.3.4 3.8.6 1.7 2.4 2.1 4.2 2 .1 0 .2 0 .3-.1-.1.4-.2.7-.2 1.1 0 1.7 0 3.7 0 6.1 0 .4.2 3.3.4 3.8.6 1.7 2.4 2.1 4.2 2 1.8.1 3.6-.3 4.2-2 .2-.5.4-3.4.4-3.8 0-2.4 0-4.4 0-6.1 0-.4-.1-.8-.2-1.1.1 0 .2 0 .3.1 1.8.1 3.6-.3 4.2-2 .2-.5.4-3.4.4-3.8 0-.4-.1-1.1-.6-1.3-.3-.2-1-.4-2.6.7-1.7 1.1-3.5 3.3-4.2 4.5z"/>
+                                d="M12 8 C9 2, 2 0, 1 4 c-1 2, 2 4, 5 4 -3 1-4 4-1 4 s6-3, 6-4 M12 8 C15 2, 22 0, 23 4 c1 2-2 4-5 4 3 1 4 4 1 4 s-6-3-6-4 "/>
                         </svg>
                     </a>
                     <a href="https://www.facebook.com/events/1745614632842530/"
@@ -86,9 +87,9 @@
                     <li><a href="#about"
                            class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">About</a>
                     </li>
-                    {{--                    <li><a href="#speakers"--}}
-                    {{--                           class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Speakers</a>--}}
-                    {{--                    </li>--}}
+                    <li><a href="#speakers"
+                           class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Speakers</a>
+                    </li>
                     {{--                    <li><a href="#schedule"--}}
                     {{--                           class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Schedule</a>--}}
                     {{--                    </li>--}}

@@ -47,7 +47,7 @@ class SinglePageTest extends TestCase
         // Check for content that would be rendered by the navigation component
         $response->assertSee('About', false);
         $response->assertSee('Venue', false);
-        $response->assertSee('Sponsors', false);
+        $response->assertSee('Partners', false);
         $response->assertSee('Register', false);
 
         // Check for content that would be rendered by the about section
@@ -56,8 +56,8 @@ class SinglePageTest extends TestCase
         // Check for content that would be rendered by the venue section
         $response->assertSee('Venue', false);
 
-        // Check for content that would be rendered by the sponsors section
-        $response->assertSee('Sponsors', false);
+        // Check for content that would be rendered by the partners section
+        $response->assertSee('Partners', false);
 
         // Check for content that would be rendered by the registration section
         $response->assertSee('Register', false);

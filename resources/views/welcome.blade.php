@@ -53,7 +53,7 @@
 
 <x-venue-section/>
 
-<x-sponsors-section/>
+        <x-partners-section/>
 
 <x-registration-section/>
 

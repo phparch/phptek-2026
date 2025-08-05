@@ -9,7 +9,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Support\Collection;
 use Illuminate\View\Component;
 
-class SponsorsSection extends Component
+class PartnersSection extends Component
 {
     public Collection $sponsorsByLevel;
 
@@ -63,17 +63,17 @@ class SponsorsSection extends Component
     public function getLevelDisplayName(string $level): string
     {
         return match ($level) {
-            'platinum' => 'Platinum Sponsors',
-            'gold' => 'Gold Sponsors',
-            'silver' => 'Silver Sponsors',
-            'bronze' => 'Bronze Sponsors',
-            'community' => 'Community Sponsors',
+            'platinum' => 'Platinum Partners',
+            'gold' => 'Gold Partners',
+            'silver' => 'Silver Partners',
+            'bronze' => 'Bronze Partners',
+            'community' => 'Community Partners',
             'media' => 'Media Partners',
-            'diversity' => 'Diversity Sponsors',
+            'diversity' => 'Diversity Partners',
             'venue' => 'Venue Partners',
-            'after-party' => 'After Party Sponsors',
-            'other' => 'Special Sponsors',
-            default => ucfirst($level).' Sponsors',
+            'after-party' => 'After Party Partners',
+            'other' => 'Special Partners',
+            default => ucfirst($level).' Partners',
         };
     }
 
@@ -83,10 +83,10 @@ class SponsorsSection extends Component
     public function getGridClasses(string $level): string
     {
         return match ($level) {
-            'platinum' => 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center',
-            'gold' => 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center',
-            'silver', 'bronze' => 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center',
-            default => 'grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-items-center',
+            'platinum' => 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3',
+            'gold' => 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3',
+            'silver', 'bronze' => 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4',
+            default => 'grid-cols-2 md:grid-cols-3 lg:grid-cols-5',
         };
     }
 
@@ -108,6 +108,6 @@ class SponsorsSection extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.sponsors-section');
+        return view('components.partners-section');
     }
 }
