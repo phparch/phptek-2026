@@ -7,7 +7,7 @@
             <div class="space-y-8">
                 <div>
                     <span
-                        class="inline-block py-1 px-3 rounded-full bg-tek-blue-100 dark:bg-tek-blue-800/20 text-tek-blue-800 dark:text-tek-blue-300 font-medium text-sm mb-4">
+                        class="inline-block py-1 px-3 rounded-full bg-tek-blue-100 dark:bg-tek-blue-800/20 text-tek-blue-800 dark:text-tek-blue-300 font-medium text-4xl mb-4">
                         {{ $conference ? $conference->getFormattedDateRange() : 'May 19-21, 2026' }}
                     </span>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
