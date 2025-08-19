@@ -96,7 +96,7 @@
                     <li><a href="#venue"
                            class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Venue</a>
                     </li>
-                    <li><a href="#sponsors"
+                    <li><a href="#partners"
                            class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Partners</a>
                     </li>
                     <li><a href="#register"
