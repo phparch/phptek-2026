@@ -1,0 +1,20 @@
+{
+    "mcpServers": {
+        "laravel-boost": {
+            "command": "/Users/eric/Library/Application Support/Herd/bin/php84",
+            "args": [
+                "/Users/eric/Repos/phptek-2026/artisan",
+                "boost:mcp"
+            ]
+        },
+        "herd": {
+            "command": "/Users/eric/Library/Application Support/Herd/bin/php84",
+            "args": [
+                "/Applications/Herd.app/Contents/Resources/herd-mcp.phar"
+            ],
+            "env": {
+                "SITE_PATH": "/Users/eric/Repos/phptek-2026"
+            }
+        }
+    }
+}
