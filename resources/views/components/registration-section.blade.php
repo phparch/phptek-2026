@@ -64,7 +64,7 @@
                                         <path fill-rule="evenodd"
                                               d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
                                     </svg>
-                                    <span>All meals & refreshments</span>
+                                    <span>Lunch & refreshments</span>
                                 </li>
                             </ul>
                             <a href="https://ti.to/phptek/phptek-2026/with/early-bird-full-3-day-conference"
@@ -109,7 +109,7 @@
                                         <path fill-rule="evenodd"
                                               d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
                                     </svg>
-                                    <span>Meals for selected days</span>
+                                    <span>Lunch & refreshments</span>
                                 </li>
                             </ul>
                             <a href="https://ti.to/phptek/phptek-2026/with/early-bird-two-days"
@@ -213,7 +213,7 @@
                                         <path fill-rule="evenodd"
                                               d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
                                     </svg>
-                                    <span>Conference materials</span>
+                                    <span>Lunch & refreshments</span>
                                 </li>
                             </ul>
                             <a href="https://ti.to/phptek/phptek-2026/with/full-conference-full-3-day-conference"
@@ -258,7 +258,7 @@
                                         <path fill-rule="evenodd"
                                               d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
                                     </svg>
-                                    <span>Meals for selected days</span>
+                                    <span>Lunch & refreshments</span>
                                 </li>
                             </ul>
                             <a href="https://ti.to/phptek/phptek-2026/with/conference-2-days"
