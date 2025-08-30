@@ -22,3 +22,7 @@ yarn-error.log
 /.vscode
 /.zed
 .claude
+
+# Credential files (keystores, private keys, etc.)
+/credentials/
+.DS_Store
