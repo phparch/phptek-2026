@@ -38,7 +38,7 @@
                         <div>
                             <h3 class="font-bold text-lg">Accommodation</h3>
                             <p class="text-gray-600 dark:text-slate-300">
-                                Special rates available for confrence attendees
+                                Special rates available for conference attendees
                             </p>
                         </div>
                     </div>
