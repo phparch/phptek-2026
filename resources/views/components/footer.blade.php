@@ -33,13 +33,19 @@
                     </a>
                     <a href="https://bsky.app/profile/phparch.com"
                        class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 12"
-                             fill="currentColor"
-                             class="h-5 w-5">
-                            <!-- Bluesky Logo - Butterfly -->
-                            <path
-                                d="M12 8 C9 2, 2 0, 1 4 c-1 2, 2 4, 5 4 -3 1-4 4-1 4 s6-3, 6-4 M12 8 C15 2, 22 0, 23 4 c1 2-2 4-5 4 3 1 4 4 1 4 s-6-3-6-4 "/>
+                        Here you go—24×24 SVG of the Bluesky logo (uses `currentColor` so you can style it via CSS):
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16" aria-label="Bluesky logo">
+                            <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948"/>
                         </svg>
+
+                        Source: Bootstrap Icons’ Bluesky glyph (MIT-licensed). ([Bootstrap Icons][1])
+
+                        Want it pre-colored? Set `fill="#0560ff"` (Bluesky blue) or style via CSS.
+
+                        [1]: https://icons.getbootstrap.com/icons/bluesky/ "Bluesky · Bootstrap Icons"
+
+
                     </a>
                     <a href="https://www.facebook.com/events/1081030564171806/"
                        class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
