@@ -96,10 +96,10 @@ class PartnersSection extends Component
     public function getCardClasses(string $level): string
     {
         return match ($level) {
-            'platinum' => 'p-10 min-h-72',
-            'gold' => 'p-8 min-h-52',
-            'silver', 'bronze' => 'p-6 min-h-40',
-            default => 'p-4 min-h-32',
+            'platinum' => 'p-10 min-h-72 w-80',
+            'gold' => 'p-8 min-h-52 w-72',
+            'silver', 'bronze' => 'p-6 min-h-40 w-64',
+            default => 'p-4 min-h-32 w-56',
         };
     }
 

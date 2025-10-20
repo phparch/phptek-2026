@@ -17,7 +17,7 @@
                             <div class="flex justify-center">
                                 @foreach($sponsors as $sponsor)
                                     <div
-                                        class="bg-white dark:bg-slate-700 rounded-xl shadow-md dark:shadow-slate-900/50 {{ $getCardClasses($level) }} cursor-pointer transition-transform hover:scale-105"
+                                        class="bg-gray-100 dark:bg-slate-700 rounded-xl shadow-md dark:shadow-slate-900/50 {{ $getCardClasses($level) }} cursor-pointer transition-transform hover:scale-105"
                                         onclick="openSponsorModal('{{ $sponsor->uuid }}')"
                                         data-sponsor-uuid="{{ $sponsor->uuid }}">
                                         <div class="flex flex-col items-center justify-center h-full">
@@ -43,11 +43,10 @@
                                 @endforeach
                             </div>
                         @else
-                            <div class="grid {{ $getGridClasses($level) }} gap-6 justify-items-center"
-                                 style="max-width: fit-content;">
+                            <div class="flex flex-wrap justify-center gap-6">
                                 @foreach($sponsors as $sponsor)
                                     <div
-                                        class="bg-white dark:bg-slate-700 rounded-xl shadow-md dark:shadow-slate-900/50 {{ $getCardClasses($level) }} cursor-pointer transition-transform hover:scale-105"
+                                        class="bg-gray-100 dark:bg-slate-700 rounded-xl shadow-md dark:shadow-slate-900/50 {{ $getCardClasses($level) }} cursor-pointer transition-transform hover:scale-105"
                                         onclick="openSponsorModal('{{ $sponsor->uuid }}')"
                                         data-sponsor-uuid="{{ $sponsor->uuid }}">
                                         <div class="flex flex-col items-center justify-center h-full">
