@@ -7,9 +7,5 @@
                 We are currently reviewing all submissions and working hard to choose the best presentations for PHP Tek 2026.
             </p>
         </div>
-
-
-
-
     </div>
 </section>
