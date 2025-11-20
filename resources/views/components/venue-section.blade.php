@@ -78,7 +78,7 @@
                 <div
                     class="absolute -top-16 -left-8 w-40 h-40 bg-tek-orange-100/50 dark:bg-tek-orange-900/5 rounded-full filter blur-2xl"></div>
                 <div
-                    class="absolute top-1/3 -right-12 w-32 h-32 bg-tek-blue-100/60 dark:bg-tek-blue-900/5 rounded-full filter blur-xl"></div>
+                    class="absolute top-1/3 -right-4 w-32 h-32 bg-tek-blue-100/60 dark:bg-tek-blue-900/5 rounded-full filter blur-xl"></div>
                 <img src="https://cdn.phparch.social/phptek2026/images/sheraton-chicago.png"
                      alt="Tech Convention Center" class="rounded-xl shadow-xl relative z-10">
                 <div
