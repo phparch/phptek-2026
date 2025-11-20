@@ -60,8 +60,8 @@
                     </div>
                 </div>
 
-                <a href="#" class="inline-flex items-center text-tek-blue-700 dark:text-tek-blue-400 font-medium">
-                    View Venue Details
+                <a href="https://app.marriott.com/reslink?id=1763400393541&key=GRP&app=resvlink" class="inline-flex items-center text-tek-blue-700 dark:text-tek-blue-400 font-medium" target="_blank">
+                    Book Now
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20"
                          fill="currentColor">
                         <path fill-rule="evenodd"
