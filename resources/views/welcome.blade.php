@@ -15,10 +15,24 @@
     <link rel="shortcut icon" href="{{ asset('/android-chrome-192x192.png') }}" type="image/x-icon">
     <link rel="shortcut icon" href="{{ asset('/android-chrome-512x512.png') }}" type="image/x-icon">
     <link rel="shortcut icon" href="{{ asset('/apple-touch-icon.png') }}" type="image/x-icon">
+    
     <!-- Primary Meta Tags -->
     <meta name="title" content="PHP Tek 2026 - The Premier PHP Conference"/>
     <meta name="description"
           content="Join us at PHP Tek 2026, the premier PHP conference featuring expert speakers, hands-on workshops, and networking opportunities.">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://phptek.io/" />
+    <meta property="og:title" content="PHP Tek 2026 - The Premier PHP Conference" />
+    <meta property="og:description" content="Join us at PHP Tek 2026, the premier PHP conference featuring expert speakers, hands-on workshops, and networking opportunities." />
+    <meta property="og:image" content="https://cdn.phparch.social/phptek2026/logos/phptek_2026_logo.png" />
+    <!-- Twitter (X) Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://phptek.io/" />
+    <meta property="twitter:title" content="PHP Tek 2026 - The Premier PHP Conference" />
+    <meta property="twitter:description" content="Join us at PHP Tek 2026, the premier PHP conference featuring expert speakers, hands-on workshops, and networking opportunities." />
+    <meta property="twitter:image" content="https://cdn.phparch.social/phptek2026/logos/phptek_2026_logo.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
