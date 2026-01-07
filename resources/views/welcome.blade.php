@@ -50,6 +50,11 @@
 <body
         class="font-sans bg-white dark:bg-slate-900 text-gray-900 dark:text-slate-100 transition-colors duration-300 pt-20">
 
+<!-- Skip to content link for keyboard users -->
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-tek-orange-900 text-white px-4 py-2 rounded z-[9999] focus:outline-none focus:ring-2 focus:ring-tek-orange-600">
+    Skip to main content
+</a>
+
 <!-- Fixed navigation -->
 <x-navigation/>
 
@@ -58,8 +63,9 @@
     <x-hero-section :conference="null"/>
 </header>
 
-<x-cfp-section/>
-<x-about-section/>
+<main id="main-content" role="main">
+    <x-cfp-section/>
+    <x-about-section/>
 
 {{-- <x-speakers-section/>  --}}
 
@@ -72,6 +78,8 @@
 <x-registration-section/>
 
 {{-- <x-newsletter-section/> --}}
+
+</main>
 
 <x-footer/>
 
@@ -88,8 +96,9 @@
         x-show="showButton"
         x-transition.opacity
         @click="window.scrollTo({top: 0, behavior: 'smooth'})"
-        class="fixed bottom-6 right-6 bg-tek-orange-900 dark:bg-tek-orange-600 text-white p-3 rounded-full shadow-lg hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all z-50 focus:outline-none">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        class="fixed bottom-6 right-6 bg-tek-orange-900 dark:bg-tek-orange-600 text-white p-3 rounded-full shadow-lg hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all z-50 focus:outline-none focus:ring-2 focus:ring-tek-orange-600"
+        aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/>
     </svg>
 </button>

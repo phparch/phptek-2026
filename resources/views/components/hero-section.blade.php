@@ -58,14 +58,15 @@
                 <div
                     class="absolute -bottom-10 -left-10 w-72 h-72 bg-tek-orange-200/60 dark:bg-tek-orange-800/20 rounded-full filter blur-3xl opacity-80 dark:opacity-70"></div>
                 <img src="https://cdn.phparch.social/phptek2026/images/phptek-audience.jpg"
-                     alt="PHP Tek Conference"
-                     class="rounded-2xl shadow-2xl relative z-10 transform hover:-translate-y-2 transition-transform duration-300">
+                     alt="Conference attendees networking and learning at PHP Tek conference venue"
+                     class="rounded-2xl shadow-2xl relative z-10 transform hover:-translate-y-2 transition-transform duration-300"
+                     loading="lazy">
             </div>
         </div>
     </div>
 
     <!-- Decorative elements -->
-    <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none" aria-hidden="true">
         <div
             class="absolute -top-24 -left-24 w-96 h-96 bg-tek-orange-100/50 dark:bg-tek-orange-900/10 rounded-full"></div>
         <div class="absolute top-1/3 right-0 w-64 h-64 bg-tek-blue-100/50 dark:bg-tek-blue-900/10 rounded-full"></div>

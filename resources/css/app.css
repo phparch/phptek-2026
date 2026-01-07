@@ -213,3 +213,111 @@ body {
 .animate-pulse-slow {
     animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
+/* WCAG 2.0 Accessibility Enhancements */
+
+/* Screen Reader Only Class */
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.focus\:not-sr-only:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0.5rem 1rem !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+}
+
+/* High Contrast Focus Indicators */
+button:focus,
+a:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+    outline: 2px solid var(--color-tek-orange-600) !important;
+    outline-offset: 2px !important;
+}
+
+.dark button:focus,
+.dark a:focus,
+.dark input:focus,
+.dark select:focus,
+.dark textarea:focus,
+.dark [tabindex]:focus {
+    outline: 2px solid var(--color-tek-orange-400) !important;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    :root {
+        --color-text-primary: #000000;
+        --color-text-secondary: #000000;
+        --color-background: #ffffff;
+    }
+    
+    .dark {
+        --color-text-primary: #ffffff;
+        --color-text-secondary: #ffffff;
+        --color-background: #000000;
+    }
+    
+    button, a {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Better Focus Indicators for Interactive Elements */
+button[aria-expanded="false"],
+button[aria-expanded="true"] {
+    position: relative;
+}
+
+button[aria-expanded="true"]::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border: 2px solid var(--color-tek-orange-600);
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.dark button[aria-expanded="true"]::after {
+    border-color: var(--color-tek-orange-400);
+}
+
+/* Ensure sufficient color contrast for text */
+.text-gray-600 {
+    color: #4B5563; /* AA compliant contrast ratio */
+}
+
+.dark .text-slate-300 {
+    color: #CBD5E1; /* AA compliant contrast ratio */
+}
