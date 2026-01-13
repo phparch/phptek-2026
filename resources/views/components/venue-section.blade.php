@@ -4,7 +4,7 @@
         <div class="grid md:grid-cols-2 gap-12 items-center">
             <div>
                 <h2 class="text-3xl md:text-4xl font-display font-bold mb-6">Conference Venue</h2>
-                <p class="text-gray-600 dark:text-slate-300 mb-6">
+                <p class="text-gray-600 dark:text-white mb-6">
                     PHP Tek 2026 will be returning to Chicago and the Sheraton O’Hare Hotel. This hotel is conveniently
                     located by the airport and offers a complimentary airport shuttle.
                 </p>
@@ -21,7 +21,7 @@
                         </svg>
                         <div>
                             <h3 class="font-bold text-lg">Location</h3>
-                            <p class="text-gray-600 dark:text-slate-300">
+                            <p class="text-gray-600 dark:text-white">
                                 6501 Mannheim Road<br>
                                 Rosemont, IL, 60018
                             </p>
@@ -37,7 +37,7 @@
                         </svg>
                         <div>
                             <h3 class="font-bold text-lg">Accommodation</h3>
-                            <p class="text-gray-600 dark:text-slate-300">
+                            <p class="text-gray-600 dark:text-white">
                                 Special rates available for conference attendees
                             </p>
                         </div>
@@ -52,7 +52,7 @@
                         </svg>
                         <div>
                             <h3 class="font-bold text-lg">Transportation</h3>
-                            <p class="text-gray-600 dark:text-slate-300">
+                            <p class="text-gray-600 dark:text-white">
                                 This hotel is conveniently located near the Chicago O'Hare Internation Airport
                                 and offers a complimentary airport shuttle.
                             </p>

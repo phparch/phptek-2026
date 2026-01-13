@@ -10,7 +10,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Register Now</h2>
-                <p class="text-gray-600 dark:text-slate-300 max-w-2xl mx-auto">
+                <p class="text-gray-600 dark:text-white max-w-2xl mx-auto">
                     Secure your spot at PHP Tek 2026 and join the PHP community for an unforgettable experience.
                 </p>
             </div>
@@ -20,7 +20,7 @@
                 <div class="text-center mb-8">
                     <h3 class="text-2xl font-display font-bold mb-2 text-tek-orange-700 dark:text-tek-orange-400">Early
                         Bird Special</h3>
-                    <p class="text-gray-600 dark:text-slate-400">Limited time offer - available while we are selecting
+                    <p class="text-gray-600 dark:text-white">Limited time offer - available while we are selecting
                         our speakers. Prices will go up once our schedule is confirmed.</p>
                 </div>
 
@@ -36,9 +36,9 @@
                             <h4 class="font-bold text-lg mb-2">Early Bird - Full 3-Day</h4>
                             <div class="flex items-baseline mb-4">
                                 <span class="text-3xl font-bold">$550</span>
-                                <span class="text-gray-600 dark:text-slate-400 ml-2">USD</span>
+                                <span class="text-gray-600 dark:text-white ml-2">USD</span>
                             </div>
-                            <p class="text-gray-600 dark:text-slate-400 text-sm mb-4">
+                            <p class="text-gray-600 dark:text-white text-sm mb-4">
                                 Available while selecting speakers
                             </p>
                             <ul class="space-y-2 mb-6 text-sm">
@@ -81,9 +81,9 @@
                             <h4 class="font-bold text-lg mb-2">Early Bird - Two Days</h4>
                             <div class="flex items-baseline mb-4">
                                 <span class="text-3xl font-bold">$450</span>
-                                <span class="text-gray-600 dark:text-slate-400 ml-2">USD</span>
+                                <span class="text-gray-600 dark:text-white ml-2">USD</span>
                             </div>
-                            <p class="text-gray-600 dark:text-slate-400 text-sm mb-4">
+                            <p class="text-gray-600 dark:text-white text-sm mb-4">
                                 Available while selecting speakers
                             </p>
                             <ul class="space-y-2 mb-6 text-sm">
@@ -126,9 +126,9 @@
                             <h4 class="font-bold text-lg mb-2">Early Bird - One Day</h4>
                             <div class="flex items-baseline mb-4">
                                 <span class="text-3xl font-bold">$350</span>
-                                <span class="text-gray-600 dark:text-slate-400 ml-2">USD</span>
+                                <span class="text-gray-600 dark:text-white ml-2">USD</span>
                             </div>
-                            <p class="text-gray-600 dark:text-slate-400 text-sm mb-4">
+                            <p class="text-gray-600 dark:text-white text-sm mb-4">
                                 Available while selecting speakers
                             </p>
                             <ul class="space-y-2 mb-6 text-sm">
@@ -170,7 +170,7 @@
             <div class="mb-16">
                 <div class="text-center mb-8">
                     <h3 class="text-2xl font-display font-bold mb-2">Conference Tickets</h3>
-                    <p class="text-gray-600 dark:text-slate-400">Regular pricing after speaker selection is complete</p>
+                    <p class="text-gray-600 dark:text-white">Regular pricing after speaker selection is complete</p>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-6">
@@ -185,9 +185,9 @@
                             <h4 class="font-bold text-lg mb-2">Full 3-Day Conference</h4>
                             <div class="flex items-baseline mb-4">
                                 <span class="text-3xl font-bold">$700</span>
-                                <span class="text-gray-600 dark:text-slate-400 ml-2">USD</span>
+                                <span class="text-gray-600 dark:text-white ml-2">USD</span>
                             </div>
-                            <p class="text-gray-600 dark:text-slate-400 text-sm mb-4">
+                            <p class="text-gray-600 dark:text-white text-sm mb-4">
                                 Complete conference experience
                             </p>
                             <ul class="space-y-2 mb-6 text-sm">
@@ -230,9 +230,9 @@
                             <h4 class="font-bold text-lg mb-2">Conference (2 Days)</h4>
                             <div class="flex items-baseline mb-4">
                                 <span class="text-3xl font-bold">$600</span>
-                                <span class="text-gray-600 dark:text-slate-400 ml-2">USD</span>
+                                <span class="text-gray-600 dark:text-white ml-2">USD</span>
                             </div>
-                            <p class="text-gray-600 dark:text-slate-400 text-sm mb-4">
+                            <p class="text-gray-600 dark:text-white text-sm mb-4">
                                 Can't attend all 3 days? No problem
                             </p>
                             <ul class="space-y-2 mb-6 text-sm">
@@ -275,9 +275,9 @@
                             <h4 class="font-bold text-lg mb-2">Conference (1 Day)</h4>
                             <div class="flex items-baseline mb-4">
                                 <span class="text-3xl font-bold">$500</span>
-                                <span class="text-gray-600 dark:text-slate-400 ml-2">USD</span>
+                                <span class="text-gray-600 dark:text-white ml-2">USD</span>
                             </div>
-                            <p class="text-gray-600 dark:text-slate-400 text-sm mb-4">
+                            <p class="text-gray-600 dark:text-white text-sm mb-4">
                                 Perfect for a focused experience
                             </p>
                             <ul class="space-y-2 mb-6 text-sm">
@@ -331,9 +331,9 @@
                             <h4 class="font-bold text-xl mb-2">Virtual Ticket: Live Stream Access</h4>
                             <div class="flex items-baseline justify-center mb-4">
                                 <span class="text-4xl font-bold">$550</span>
-                                <span class="text-gray-600 dark:text-slate-400 ml-2">USD</span>
+                                <span class="text-gray-600 dark:text-white ml-2">USD</span>
                             </div>
-                            <p class="text-gray-600 dark:text-slate-400 mb-6">
+                            <p class="text-gray-600 dark:text-white mb-6">
                                 Attend any sessions via live stream with interactive Q&A through Discord
                             </p>
                             <ul class="space-y-3 mb-8 text-left max-w-md mx-auto">
@@ -374,7 +374,7 @@
             <!-- Group Discounts -->
             <div class="bg-white dark:bg-slate-700 rounded-xl shadow-md dark:shadow-slate-900/50 p-8">
                 <h3 class="font-bold text-xl mb-4">Team & Group Discounts</h3>
-                <p class="text-gray-600 dark:text-slate-300 mb-6">
+                <p class="text-gray-600 dark:text-white mb-6">
                     Bringing your whole team? Save on registration with our group rates.
                     Contact us at <a href="mailto:tek@phparch.com"
                                      class="text-tek-blue-700 dark:text-tek-blue-400 hover:underline">tek@phparch.com</a>

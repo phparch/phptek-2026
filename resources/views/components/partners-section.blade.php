@@ -3,7 +3,7 @@
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Our Partners</h2>
-            <p class="text-gray-600 dark:text-slate-300 max-w-2xl mx-auto">
+            <p class="text-gray-600 dark:text-white max-w-2xl mx-auto">
                 PHP Tek 2026 is made possible thanks to the support of our amazing partners.
             </p>
         </div>
@@ -33,20 +33,20 @@
                                                     <div
                                                         class="w-16 h-16 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-2">
                                                         <span
-                                                            class="text-xs font-bold text-gray-500 dark:text-slate-400">LOGO</span>
+                                                            class="text-xs font-bold text-gray-500 dark:text-white">LOGO</span>
                                                     </div>
                                                 @endif
                                             @else
                                                 <div
                                                     class="w-16 h-16 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-2">
                                                     <span
-                                                        class="text-xs font-bold text-gray-500 dark:text-slate-400">LOGO</span>
+                                                        class="text-xs font-bold text-gray-500 dark:text-white">LOGO</span>
                                                 </div>
                                             @endif
                                             <div class="text-center">
                                                 <p class="font-semibold text-sm">{{ $sponsor->name }}</p>
                                                 @if($level === 'other' && $sponsor->pivot->sponsorship_level_details)
-                                                    <p class="text-xs text-gray-600 dark:text-slate-400 mt-1">{{ $sponsor->pivot->sponsorship_level_details }}</p>
+                                                    <p class="text-xs text-gray-600 dark:text-white mt-1">{{ $sponsor->pivot->sponsorship_level_details }}</p>
                                                 @endif
                                             </div>
                                         </div>
@@ -68,13 +68,13 @@
                                                 <div
                                                     class="w-32 h-32 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-3">
                                                     <span
-                                                        class="text-sm font-bold text-gray-500 dark:text-slate-400">LOGO</span>
+                                                        class="text-sm font-bold text-gray-500 dark:text-white">LOGO</span>
                                                 </div>
                                             @endif
                                             <div class="text-center">
                                                 <p class="font-semibold text-sm">{{ $sponsor->name }}</p>
                                                 @if($level === 'other' && $sponsor->pivot->sponsorship_level_details)
-                                                    <p class="text-xs text-gray-600 dark:text-slate-400 mt-1">{{ $sponsor->pivot->sponsorship_level_details }}</p>
+                                                    <p class="text-xs text-gray-600 dark:text-white mt-1">{{ $sponsor->pivot->sponsorship_level_details }}</p>
                                                 @endif
                                             </div>
                                         </div>
@@ -88,7 +88,7 @@
         </div>
 
         <div class="text-center mt-16">
-            <p class="text-gray-600 dark:text-slate-300 mb-4">
+            <p class="text-gray-600 dark:text-white mb-4">
                 Interested in partnering with us for PHP Tek 2026?
             </p>
             <a href="https://phpa.me/partner-program"
@@ -143,7 +143,7 @@
                             <div>
                                 <h4 class="font-semibold text-gray-900 dark:text-white mb-2">About</h4>
                                 <div id="modal-sponsor-description"
-                                     class="text-gray-600 dark:text-slate-300 prose prose-sm dark:prose-invert max-w-none">
+                                     class="text-gray-600 dark:text-white prose prose-sm dark:prose-invert max-w-none">
                                     <!-- Description will be inserted here -->
                                 </div>
                             </div>

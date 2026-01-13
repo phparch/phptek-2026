@@ -9,12 +9,12 @@
                     <span
                         class="ml-1 bg-tek-orange-900 dark:bg-tek-orange-600 text-white text-xs font-bold py-1 px-2 rounded">2026</span>
                 </a>
-                <p class="text-gray-600 dark:text-slate-300 text-sm mb-6">
+                <p class="text-gray-600 dark:text-white text-sm mb-6">
                     The premier PHP conference of 2026, bringing together developers, experts, and community leaders.
                 </p>
                 <div class="flex space-x-4">
                     <a href="https://x.com/phptek"
-                       class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
+                       class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                              fill="currentColor"
                              class="h-5 w-5">
@@ -23,7 +23,7 @@
                         </svg>
                     </a>
                     <a href="https://phparch.social/@phptek"
-                       class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
+                       class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                              fill="currentColor"
                              class="h-5 w-5">
@@ -32,7 +32,7 @@
                         </svg>
                     </a>
                     <a href="https://bsky.app/profile/phparch.com"
-                       class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
+                       class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                              viewBox="0 0 16 16" aria-label="Bluesky logo">
                             <path
@@ -40,7 +40,7 @@
                         </svg>
                     </a>
                     <a href="https://www.facebook.com/events/1081030564171806/"
-                       class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
+                       class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                              class="h-5 w-5">
@@ -48,7 +48,7 @@
                         </svg>
                     </a>
                     <a href="https://www.linkedin.com/company/phparch/"
-                       class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
+                       class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                              class="h-5 w-5">
@@ -59,7 +59,7 @@
                         </svg>
                     </a>
                     <a href="https://www.youtube.com/@phparch"
-                       class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
+                       class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                              fill="currentColor"
                              class="h-5 w-5">
@@ -68,7 +68,7 @@
                         </svg>
                     </a>
                     <a href="https://discord.phparch.com"
-                       class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
+                       class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                              fill="currentColor"
                              class="h-5 w-5">
@@ -77,7 +77,7 @@
                         </svg>
                     </a>
                     <a href="https://www.phptek.tv"
-                       class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
+                       class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
                         <svg height="26" width="24" xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 0 28 30"
                              fill="currentColor"
@@ -110,22 +110,22 @@
                 <h4 class="font-bold text-lg mb-4">Quick Links</h4>
                 <ul class="space-y-2">
                     <li><a href="#about"
-                           class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">About</a>
+                           class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">About</a>
                     </li>
                     <li><a href="#speakers"
-                           class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Speakers</a>
+                           class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Speakers</a>
                     </li>
                     {{--                    <li><a href="#schedule"--}}
-                    {{--                           class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Schedule</a>--}}
+                    {{--                           class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Schedule</a>--}}
                     {{--                    </li>--}}
                     <li><a href="#venue"
-                           class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Venue</a>
+                           class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Venue</a>
                     </li>
                     <li><a href="#partners"
-                           class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Partners</a>
+                           class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Partners</a>
                     </li>
                     <li><a href="#register"
-                           class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Register</a>
+                           class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Register</a>
                     </li>
                 </ul>
             </div>
@@ -136,7 +136,7 @@
                     <li>
                         <button type="button"
                                 onclick="window.dispatchEvent(new CustomEvent('open-coc-modal'))"
-                                class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors cursor-pointer text-left">
+                                class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors cursor-pointer text-left">
                             Code
                             of Conduct
                         </button>
@@ -144,7 +144,7 @@
                     <li>
                         <button type="button"
                                 onclick="window.dispatchEvent(new CustomEvent('open-travel-modal'))"
-                                class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors cursor-pointer text-left">
+                                class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors cursor-pointer text-left">
                             Travel Information
                         </button>
                     </li>
@@ -156,24 +156,24 @@
                 <ul class="space-y-2">
                     <li class="flex items-start">
                         <svg xmlns="http://www.w3.org/2000/svg"
-                             class="h-5 w-5 text-gray-600 dark:text-slate-400 mr-2 mt-0.5" fill="none"
+                             class="h-5 w-5 text-gray-600 dark:text-white mr-2 mt-0.5" fill="none"
                              viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
-                        <span class="text-gray-600 dark:text-slate-300"><a href="mailto:tek@phparch.com"
+                        <span class="text-gray-600 dark:text-white"><a href="mailto:tek@phparch.com"
                                                                            target="_blank">tek@phparch.com</a></span>
                     </li>
                     <li class="flex items-start">
                         <svg xmlns="http://www.w3.org/2000/svg"
-                             class="h-5 w-5 text-gray-600 dark:text-slate-400 mr-2 mt-0.5" fill="none"
+                             class="h-5 w-5 text-gray-600 dark:text-white mr-2 mt-0.5" fill="none"
                              viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                   d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                   d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                         </svg>
-                        <span class="text-gray-600 dark:text-slate-300">
+                        <span class="text-gray-600 dark:text-white">
                             9245 Twin Trails Drive<br>
                             #720503<br>
                             San Diego, CA 92129<br>
@@ -186,18 +186,18 @@
 
         <div
             class="border-t border-gray-200 dark:border-slate-600 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-            <p class="text-gray-600 dark:text-slate-300 text-sm">
+            <p class="text-gray-600 dark:text-white text-sm">
                 &copy; {{ date('Y') }} PHP Tek Conference. All rights reserved.
             </p>
             <div class="mt-4 md:mt-0 flex space-x-6">
                 <button type="button"
                         onclick="window.dispatchEvent(new CustomEvent('open-privacy-policy-modal'))"
-                        class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors cursor-pointer text-left">
+                        class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors cursor-pointer text-left">
                     Privacy Policy
                 </button>
                 <button type="button"
                         onclick="window.dispatchEvent(new CustomEvent('open-cookie-policy-modal'))"
-                        class="text-gray-600 dark:text-slate-300 hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors cursor-pointer text-left">
+                        class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors cursor-pointer text-left">
                     Cookie Policy
                 </button>
             </div>

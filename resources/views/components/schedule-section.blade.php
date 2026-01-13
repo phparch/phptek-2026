@@ -3,7 +3,7 @@
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Conference Schedule</h2>
-            <p class="text-gray-600 dark:text-slate-300 max-w-2xl mx-auto">
+            <p class="text-gray-600 dark:text-white max-w-2xl mx-auto">
                 Five days of engaging talks, workshops, and networking events.
             </p>
         </div>
@@ -33,7 +33,7 @@
             <div x-show="activeDay === 'day1'" class="p-6 space-y-6">
                 <div class="border-l-4 border-tek-orange-700 dark:border-tek-orange-400 pl-4 py-2 mb-8">
                     <h3 class="font-bold text-xl">Workshops Day</h3>
-                    <p class="text-gray-600 dark:text-slate-300">Intensive hands-on workshops to level up your
+                    <p class="text-gray-600 dark:text-white">Intensive hands-on workshops to level up your
                         skills</p>
                 </div>
 
@@ -42,13 +42,13 @@
                         class="p-6 border border-gray-200 dark:border-slate-600 rounded-lg hover:shadow-md transition-shadow bg-white dark:bg-slate-600/50">
                         <div class="flex justify-between items-start mb-4">
                             <div>
-                                <span class="text-sm text-gray-600 dark:text-slate-400">9:00 AM - 12:00 PM</span>
+                                <span class="text-sm text-gray-600 dark:text-white">9:00 AM - 12:00 PM</span>
                                 <h4 class="font-bold text-lg mt-1">Advanced Laravel Architecture</h4>
                             </div>
                             <span
                                 class="bg-tek-orange-100 dark:bg-tek-orange-800/20 text-tek-orange-800 dark:text-tek-orange-300 text-xs py-1 px-2 rounded">Workshop</span>
                         </div>
-                        <p class="text-gray-600 dark:text-slate-300 text-sm mb-4">
+                        <p class="text-gray-600 dark:text-white text-sm mb-4">
                             Deep dive into Laravel's architecture patterns, service containers, and advanced dependency
                             injection.
                         </p>
@@ -57,7 +57,7 @@
                                  class="w-10 h-10 rounded-full mr-3">
                             <div>
                                 <p class="font-medium">Sarah Johnson</p>
-                                <p class="text-sm text-gray-600 dark:text-slate-400">Laravel Core Team</p>
+                                <p class="text-sm text-gray-600 dark:text-white">Laravel Core Team</p>
                             </div>
                         </div>
                     </div>
@@ -66,13 +66,13 @@
                         class="p-6 border border-gray-200 dark:border-slate-600 rounded-lg hover:shadow-md transition-shadow bg-white dark:bg-slate-600/50">
                         <div class="flex justify-between items-start mb-4">
                             <div>
-                                <span class="text-sm text-gray-600 dark:text-slate-400">9:00 AM - 12:00 PM</span>
+                                <span class="text-sm text-gray-600 dark:text-white">9:00 AM - 12:00 PM</span>
                                 <h4 class="font-bold text-lg mt-1">PHP Security Masterclass</h4>
                             </div>
                             <span
                                 class="bg-tek-orange-100 dark:bg-tek-orange-800/20 text-tek-orange-800 dark:text-tek-orange-300 text-xs py-1 px-2 rounded">Workshop</span>
                         </div>
-                        <p class="text-gray-600 dark:text-slate-300 text-sm mb-4">
+                        <p class="text-gray-600 dark:text-white text-sm mb-4">
                             Hands-on security workshop covering OWASP Top 10, security best practices, and real-world
                             examples.
                         </p>
@@ -81,7 +81,7 @@
                                  class="w-10 h-10 rounded-full mr-3">
                             <div>
                                 <p class="font-medium">Emma Rodriguez</p>
-                                <p class="text-sm text-gray-600 dark:text-slate-400">Security Expert</p>
+                                <p class="text-sm text-gray-600 dark:text-white">Security Expert</p>
                             </div>
                         </div>
                     </div>
@@ -90,13 +90,13 @@
                         class="p-6 border border-gray-200 dark:border-slate-600 rounded-lg hover:shadow-md transition-shadow bg-white dark:bg-slate-600/50">
                         <div class="flex justify-between items-start mb-4">
                             <div>
-                                <span class="text-sm text-gray-600 dark:text-slate-400">1:00 PM - 4:00 PM</span>
+                                <span class="text-sm text-gray-600 dark:text-white">1:00 PM - 4:00 PM</span>
                                 <h4 class="font-bold text-lg mt-1">High-Performance PHP Applications</h4>
                             </div>
                             <span
                                 class="bg-tek-orange-100 dark:bg-tek-orange-800/20 text-tek-orange-800 dark:text-tek-orange-300 text-xs py-1 px-2 rounded">Workshop</span>
                         </div>
-                        <p class="text-gray-600 dark:text-slate-300 text-sm mb-4">
+                        <p class="text-gray-600 dark:text-white text-sm mb-4">
                             Optimize PHP applications for maximum performance, from code-level optimizations to caching
                             strategies.
                         </p>
@@ -105,7 +105,7 @@
                                  class="w-10 h-10 rounded-full mr-3">
                             <div>
                                 <p class="font-medium">Michael Chen</p>
-                                <p class="text-sm text-gray-600 dark:text-slate-400">PHP Core Contributor</p>
+                                <p class="text-sm text-gray-600 dark:text-white">PHP Core Contributor</p>
                             </div>
                         </div>
                     </div>
@@ -114,13 +114,13 @@
                         class="p-6 border border-gray-200 dark:border-slate-600 rounded-lg hover:shadow-md transition-shadow bg-white dark:bg-slate-600/50">
                         <div class="flex justify-between items-start mb-4">
                             <div>
-                                <span class="text-sm text-gray-600 dark:text-slate-400">1:00 PM - 4:00 PM</span>
+                                <span class="text-sm text-gray-600 dark:text-white">1:00 PM - 4:00 PM</span>
                                 <h4 class="font-bold text-lg mt-1">Symfony Components Deep Dive</h4>
                             </div>
                             <span
                                 class="bg-tek-orange-100 dark:bg-tek-orange-800/20 text-tek-orange-800 dark:text-tek-orange-300 text-xs py-1 px-2 rounded">Workshop</span>
                         </div>
-                        <p class="text-gray-600 dark:text-slate-300 text-sm mb-4">
+                        <p class="text-gray-600 dark:text-white text-sm mb-4">
                             Explore Symfony's powerful components and learn how to leverage them in any PHP project.
                         </p>
                         <div class="flex items-center">
@@ -128,7 +128,7 @@
                                  class="w-10 h-10 rounded-full mr-3">
                             <div>
                                 <p class="font-medium">James Wilson</p>
-                                <p class="text-sm text-gray-600 dark:text-slate-400">Symfony Maintainer</p>
+                                <p class="text-sm text-gray-600 dark:text-white">Symfony Maintainer</p>
                             </div>
                         </div>
                     </div>
@@ -151,36 +151,36 @@
             <div x-show="activeDay === 'day2'" class="p-6 space-y-6">
                 <div class="border-l-4 border-tek-orange-700 dark:border-tek-orange-400 pl-4 py-2 mb-8">
                     <h3 class="font-bold text-xl">Conference Day 1</h3>
-                    <p class="text-gray-600 dark:text-slate-300">Main conference tracks with keynotes and technical
+                    <p class="text-gray-600 dark:text-white">Main conference tracks with keynotes and technical
                         sessions</p>
                 </div>
-                <p class="text-center text-gray-600 dark:text-slate-300">Full schedule coming soon...</p>
+                <p class="text-center text-gray-600 dark:text-white">Full schedule coming soon...</p>
             </div>
 
             <div x-show="activeDay === 'day3'" class="p-6 space-y-6">
                 <div class="border-l-4 border-tek-orange-700 dark:border-tek-orange-400 pl-4 py-2 mb-8">
                     <h3 class="font-bold text-xl">Conference Day 2</h3>
-                    <p class="text-gray-600 dark:text-slate-300">Main conference tracks with keynotes and technical
+                    <p class="text-gray-600 dark:text-white">Main conference tracks with keynotes and technical
                         sessions</p>
                 </div>
-                <p class="text-center text-gray-600 dark:text-slate-300">Full schedule coming soon...</p>
+                <p class="text-center text-gray-600 dark:text-white">Full schedule coming soon...</p>
             </div>
 
             <div x-show="activeDay === 'day4'" class="p-6 space-y-6">
                 <div class="border-l-4 border-tek-orange-700 dark:border-tek-orange-400 pl-4 py-2 mb-8">
                     <h3 class="font-bold text-xl">Conference Day 3</h3>
-                    <p class="text-gray-600 dark:text-slate-300">Main conference tracks with keynotes and technical
+                    <p class="text-gray-600 dark:text-white">Main conference tracks with keynotes and technical
                         sessions</p>
                 </div>
-                <p class="text-center text-gray-600 dark:text-slate-300">Full schedule coming soon...</p>
+                <p class="text-center text-gray-600 dark:text-white">Full schedule coming soon...</p>
             </div>
 
             <div x-show="activeDay === 'day5'" class="p-6 space-y-6">
                 <div class="border-l-4 border-tek-orange-700 dark:border-tek-orange-400 pl-4 py-2 mb-8">
                     <h3 class="font-bold text-xl">Community Day</h3>
-                    <p class="text-gray-600 dark:text-slate-300">Community-driven unconference and networking events</p>
+                    <p class="text-gray-600 dark:text-white">Community-driven unconference and networking events</p>
                 </div>
-                <p class="text-center text-gray-600 dark:text-slate-300">Full schedule coming soon...</p>
+                <p class="text-center text-gray-600 dark:text-white">Full schedule coming soon...</p>
             </div>
         </div>
     </div>

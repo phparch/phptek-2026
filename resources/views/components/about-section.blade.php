@@ -13,7 +13,7 @@
     <div class="container mx-auto px-6 relative z-10">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">About PHP Tek 2026</h2>
-            <p class="text-gray-600 dark:text-slate-300 max-w-2xl mx-auto">
+            <p class="text-gray-600 dark:text-white max-w-2xl mx-auto">
                 The premier PHP conference focused on modern development, best practices, and emerging technologies.
             </p>
         </div>
@@ -30,7 +30,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-bold mb-3">Expert Speakers</h3>
-                <p class="text-gray-600 dark:text-slate-300">
+                <p class="text-gray-600 dark:text-white">
                     Learn from 25+ industry experts and PHP core developers sharing their knowledge and experience.
                 </p>
             </div>
@@ -46,7 +46,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-bold mb-3">Hands-on Workshops</h3>
-                <p class="text-gray-600 dark:text-slate-300">
+                <p class="text-gray-600 dark:text-white">
                     Participate in intensive workshops on advanced PHP techniques, frameworks, and tooling.
                 </p>
             </div>
@@ -63,7 +63,7 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-bold mb-3">Networking Opportunities</h3>
-                <p class="text-gray-600 dark:text-slate-300">
+                <p class="text-gray-600 dark:text-white">
                     Connect with 200+ PHP developers, community leaders, and industry professionals.
                 </p>
             </div>
@@ -72,19 +72,19 @@
         <div class="mt-16 grid md:grid-cols-4 gap-6 text-center">
             <div class="p-6">
                 <div class="text-4xl font-bold text-tek-orange-900 dark:text-tek-orange-400 mb-2">25+</div>
-                <p class="text-gray-600 dark:text-slate-300">Expert Speakers</p>
+                <p class="text-gray-600 dark:text-white">Expert Speakers</p>
             </div>
             <div class="p-6">
                 <div class="text-4xl font-bold text-tek-blue-800 dark:text-tek-blue-400 mb-2">30+</div>
-                <p class="text-gray-600 dark:text-slate-300">Technical Sessions</p>
+                <p class="text-gray-600 dark:text-white">Technical Sessions</p>
             </div>
             <div class="p-6">
                 <div class="text-4xl font-bold text-tek-orange-900 dark:text-tek-orange-400 mb-2">6</div>
-                <p class="text-gray-600 dark:text-slate-300">Hands-on Workshops</p>
+                <p class="text-gray-600 dark:text-white">Hands-on Workshops</p>
             </div>
             <div class="p-6">
                 <div class="text-4xl font-bold text-tek-blue-800 dark:text-tek-blue-400 mb-2">200+</div>
-                <p class="text-gray-600 dark:text-slate-300">Attendees</p>
+                <p class="text-gray-600 dark:text-white">Attendees</p>
             </div>
         </div>
     </div>

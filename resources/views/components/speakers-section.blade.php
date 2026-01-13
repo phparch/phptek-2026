@@ -3,7 +3,7 @@
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Meet Our Speakers</h2>
-            <p class="text-gray-600 dark:text-slate-300 max-w-2xl mx-auto">
+            <p class="text-gray-600 dark:text-white max-w-2xl mx-auto">
                 Learn from the brightest minds in the PHP ecosystem and beyond.
             </p>
         </div>
@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="p-6">
-                    <p class="text-gray-600 dark:text-slate-300 text-sm mb-4">
+                    <p class="text-gray-600 dark:text-white text-sm mb-4">
                         Expert in modern PHP architecture, Laravel, and scalable application design.
                     </p>
                     <div class="flex space-x-2">
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="p-6">
-                    <p class="text-gray-600 dark:text-slate-300 text-sm mb-4">
+                    <p class="text-gray-600 dark:text-white text-sm mb-4">
                         PHP core contributor and performance optimization specialist.
                     </p>
                     <div class="flex space-x-2">
@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <div class="p-6">
-                    <p class="text-gray-600 dark:text-slate-300 text-sm mb-4">
+                    <p class="text-gray-600 dark:text-white text-sm mb-4">
                         Leading authority on PHP application security and best practices.
                     </p>
                     <div class="flex space-x-2">
@@ -87,7 +87,7 @@
                     </div>
                 </div>
                 <div class="p-6">
-                    <p class="text-gray-600 dark:text-slate-300 text-sm mb-4">
+                    <p class="text-gray-600 dark:text-white text-sm mb-4">
                         Symfony framework maintainer and distributed systems architect.
                     </p>
                     <div class="flex space-x-2">

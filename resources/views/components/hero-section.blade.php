@@ -15,7 +15,7 @@
                         2026
                     </h1>
                 </div>
-                <p class="text-gray-600 dark:text-slate-300 text-lg md:text-xl max-w-xl">
+                <p class="text-gray-600 dark:text-white text-lg md:text-xl max-w-xl">
                     Join us for 3 days of multiple track expert-led sessions, hands-on workshops, and unparalleled
                     networking
                     opportunities with the PHP community.
@@ -46,7 +46,7 @@
                 {{--                                +2K--}}
                 {{--                            </div>--}}
                 {{--                        </div>--}}
-                {{--                        <p class="ml-4 text-sm text-gray-600 dark:text-slate-300">--}}
+                {{--                        <p class="ml-4 text-sm text-gray-600 dark:text-white">--}}
                 {{--                            <span class="font-medium">2,000+</span> developers already registered--}}
                 {{--                        </p>--}}
                 {{--                    </div>--}}

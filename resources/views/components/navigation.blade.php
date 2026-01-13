@@ -112,7 +112,7 @@
                         Now</a>
 
                     <div class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-slate-600">
-                        <span class="text-sm text-gray-600 dark:text-slate-400">Theme</span>
+                        <span class="text-sm text-gray-600 dark:text-white">Theme</span>
                         <button @click="toggleTheme()"
                                 class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-tek-blue-500"
                                 aria-label="Toggle dark mode">

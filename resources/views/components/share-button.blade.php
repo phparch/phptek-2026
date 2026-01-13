@@ -7,12 +7,12 @@
             :aria-expanded="shareDropdown.toString()"
             :aria-controls="'share-dropdown'"
             @keydown.escape="shareDropdown = false">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600 dark:text-gray-300" fill="none"
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600 dark:text-white" fill="none"
              viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
         </svg>
-        <span class="hidden sm:inline text-sm font-medium text-gray-700 dark:text-gray-200">Share</span>
+        <span class="hidden sm:inline text-sm font-medium text-gray-700 dark:text-white">Share</span>
     </button>
 
     <!-- Dropdown Menu -->
@@ -35,7 +35,7 @@
 
         <!-- X (formerly Twitter) -->
         <button onclick="shareOnX(); document.querySelector('[x-data*=shareDropdown]').__x.$data.shareDropdown = false"
-                class="w-full flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
+                class="w-full flex items-center px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
                 role="menuitem"
                 aria-label="Share on X (formerly Twitter)">
             <svg class="h-4 w-4 mr-3 text-gray-900 dark:text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -48,7 +48,7 @@
         <!-- Bluesky -->
         <button
             onclick="shareOnBluesky(); document.querySelector('[x-data*=shareDropdown]').__x.$data.shareDropdown = false"
-            class="w-full flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
+            class="w-full flex items-center px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
             role="menuitem"
             aria-label="Share on Bluesky">
             <svg class="h-4 w-4 mr-3 text-blue-500" fill="currentColor" viewBox="0 0 24 12" aria-hidden="true">
@@ -61,7 +61,7 @@
         <!-- Mastodon -->
         <button
             onclick="shareOnMastodon(); document.querySelector('[x-data*=shareDropdown]').__x.$data.shareDropdown = false"
-            class="w-full flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
+            class="w-full flex items-center px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
             role="menuitem"
             aria-label="Share on Mastodon">
             <svg class="h-4 w-4 mr-3 text-purple-600" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -74,7 +74,7 @@
         <!-- Facebook -->
         <button
             onclick="shareOnFacebook(); document.querySelector('[x-data*=shareDropdown]').__x.$data.shareDropdown = false"
-            class="w-full flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
+            class="w-full flex items-center px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
             role="menuitem"
             aria-label="Share on Facebook">
             <svg class="h-4 w-4 mr-3 text-blue-600" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -87,7 +87,7 @@
         <!-- LinkedIn -->
         <button
             onclick="shareOnLinkedIn(); document.querySelector('[x-data*=shareDropdown]').__x.$data.shareDropdown = false"
-            class="w-full flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
+            class="w-full flex items-center px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
             role="menuitem"
             aria-label="Share on LinkedIn">
             <svg class="h-4 w-4 mr-3 text-blue-700" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -100,7 +100,7 @@
         <!-- Email -->
         <button
             onclick="shareViaEmail(); document.querySelector('[x-data*=shareDropdown]').__x.$data.shareDropdown = false"
-            class="w-full flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
+            class="w-full flex items-center px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
             role="menuitem"
             aria-label="Share via email">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-3 text-gray-600" fill="none" viewBox="0 0 24 24"
@@ -117,7 +117,7 @@
         <!-- Copy Link -->
         <button
             onclick="copyToClipboard(this); document.querySelector('[x-data*=shareDropdown]').__x.$data.shareDropdown = false"
-            class="w-full flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
+            class="w-full flex items-center px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
             role="menuitem"
             aria-label="Copy link to clipboard">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"

@@ -387,3 +387,104 @@ th, td {
 .dark th, .dark td {
     border-color: var(--color-slate-600);
 }
+
+/* Force all gray text to white in dark mode - WCAG compliance */
+.dark .text-gray-600,
+.dark .text-gray-700,
+.dark .text-slate-300,
+.dark .text-slate-400,
+.dark .text-gray-200,
+.dark .text-gray-300,
+.dark .text-gray-400,
+.dark .text-gray-500 {
+    color: #FFFFFF !important;
+}
+
+/* Ensure dark:text-white class works */
+.dark .dark\:text-white,
+html.dark .dark\:text-white {
+    color: #FFFFFF !important;
+}
+
+/* Global dark mode text fix - ensure all text is readable */
+.dark {
+    color: #FFFFFF;
+}
+
+.dark p:not([class*="text-tek-"]):not([class*="bg-"]) {
+    color: #FFFFFF !important;
+}
+
+/* Target the specific problematic classes */
+html.dark .text-gray-600,
+html.dark [class*="text-gray-"],
+html.dark [class*="text-slate-"] {
+    color: #FFFFFF !important;
+}
+
+/* Override any inherited gray colors */
+.dark * {
+    --tw-text-opacity: 1;
+}
+
+.dark .text-gray-600 {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+/* Specific overrides for commonly used text patterns */
+.dark p {
+    color: #FFFFFF !important;
+}
+
+.dark span:not([class*="bg-tek-"]):not([class*="text-tek-"]) {
+    color: #FFFFFF !important;
+}
+
+/* Force all content text in about section to white */
+.dark #about p,
+.dark section p,
+.dark .prose p {
+    color: #FFFFFF !important;
+}
+
+/* Ensure links maintain proper color in dark mode */
+.dark a:not([class*="bg-"]):not([class*="text-tek-"]) {
+    color: #FFFFFF;
+}
+
+/* Force specific text elements to white in dark mode */
+.dark .text-gray-600,
+.dark [class*="text-gray-"] {
+    color: #FFFFFF !important;
+}
+
+.dark .dark\:text-white {
+    color: #FFFFFF !important;
+}
+
+/* Global dark mode text fix - ensure all text is readable */
+.dark {
+    color: #FFFFFF;
+}
+
+.dark p:not([class*="text-tek-"]):not([class*="bg-"]) {
+    color: #FFFFFF !important;
+}
+
+/* Target the specific problematic classes */
+html.dark .text-gray-600,
+html.dark [class*="text-gray-"],
+html.dark [class*="text-slate-"] {
+    color: #FFFFFF !important;
+}
+
+/* Override any inherited gray colors */
+.dark * {
+    --tw-text-opacity: 1;
+}
+
+.dark .text-gray-600 {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}

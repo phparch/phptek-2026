@@ -46,10 +46,10 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
                         </svg>
                         <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-2">Coming Soon</h3>
-                        <p class="text-gray-600 dark:text-slate-300 text-lg">
+                        <p class="text-gray-600 dark:text-white text-lg">
                             Travel information and recommendations will be available soon.
                         </p>
-                        <p class="text-gray-500 dark:text-slate-400 text-sm mt-2">
+                        <p class="text-gray-500 dark:text-white text-sm mt-2">
                             Check back later for details about transportation, accommodations, and local attractions.
                         </p>
                     </div>
