@@ -7,7 +7,7 @@
                 <a href="#" class="flex items-center mb-4">
                     <span class="text-2xl font-display font-bold text-tek-blue-800 dark:text-tek-blue-400">PHPTek</span>
                     <span
-                        class="ml-1 bg-tek-orange-900 dark:bg-tek-orange-600 text-white text-xs font-bold py-1 px-2 rounded">2026</span>
+                        class="ml-1 bg-tek-orange-900 dark:bg-tek-orange-900 text-white text-xs font-bold py-1 px-2 rounded">2026</span>
                 </a>
                 <p class="text-gray-600 dark:text-white text-sm mb-6">
                     The premier PHP conference of 2026, bringing together developers, experts, and community leaders.

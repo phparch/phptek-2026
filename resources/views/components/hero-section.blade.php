@@ -22,7 +22,7 @@
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#register"
-                       class="bg-tek-orange-900 dark:bg-tek-orange-600 text-white px-8 py-3 rounded-lg text-center font-medium hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all shadow-md hover:shadow-lg">
+                       class="bg-tek-orange-900 dark:bg-tek-orange-900 text-white px-8 py-3 rounded-lg text-center font-medium hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all shadow-md hover:shadow-lg">
                         Register Now
                     </a>
                     {{--                    <a href="#speakers"--}}

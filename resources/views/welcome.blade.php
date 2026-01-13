@@ -99,7 +99,7 @@
         x-show="showButton"
         x-transition.opacity
         @click="window.scrollTo({top: 0, behavior: 'smooth'}); document.getElementById('live-region').textContent = 'Scrolled to top of page'"
-        class="fixed bottom-6 right-6 bg-tek-orange-900 dark:bg-tek-orange-600 text-white p-3 rounded-full shadow-lg hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all z-50 focus:outline-none focus:ring-2 focus:ring-tek-orange-600"
+        class="fixed bottom-6 right-6 bg-tek-orange-900 dark:bg-tek-orange-900 text-white p-3 rounded-full shadow-lg hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all z-50 focus:outline-none focus:ring-2 focus:ring-tek-orange-600"
         aria-label="Back to top of page">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/>

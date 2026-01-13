@@ -29,7 +29,7 @@
                     <div
                         class="bg-white dark:bg-slate-700 rounded-xl shadow-lg overflow-hidden border-t-4 border-tek-orange-700 dark:border-tek-orange-400 relative">
                         <div
-                            class="absolute top-0 right-0 bg-tek-orange-700 dark:bg-tek-orange-600 text-white text-xs font-bold py-1 px-3 rounded-bl-lg">
+                            class="absolute top-0 right-0 bg-tek-orange-700 dark:bg-tek-orange-900 text-white text-xs font-bold py-1 px-3 rounded-bl-lg">
                             BEST VALUE
                         </div>
                         <div class="p-6">
@@ -68,7 +68,7 @@
                                 </li>
                             </ul>
                             <a href="https://ti.to/phptek/phptek-2026/with/early-bird-full-3-day-conference"
-                               class="block bg-tek-orange-700 dark:bg-tek-orange-600 text-white text-center py-2 rounded-lg font-medium hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all">
+                               class="block bg-tek-orange-700 dark:bg-tek-orange-900 text-white text-center py-2 rounded-lg font-medium hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all">
                                 Register Now
                             </a>
                         </div>
@@ -382,7 +382,7 @@
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="mailto:tek@phparch.com"
-                       class="bg-tek-orange-900 dark:bg-tek-orange-600 text-white px-6 py-3 rounded-lg text-center font-medium hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all">
+                       class="bg-tek-orange-900 dark:bg-tek-orange-900 text-white px-6 py-3 rounded-lg text-center font-medium hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all">
                         Contact for Group Rates
                     </a>
                 </div>

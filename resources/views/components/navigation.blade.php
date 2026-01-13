@@ -20,7 +20,7 @@
                          class="h-10 w-10 mr-3">
                     <span class="text-3xl font-display font-bold text-tek-blue-800 dark:text-tek-blue-400">PHPTek</span>
                     <span
-                        class="ml-1 bg-tek-orange-900 dark:bg-tek-orange-600 text-white text-sm font-bold py-1 px-2 rounded">2026</span>
+                        class="ml-1 bg-tek-orange-900 dark:bg-tek-orange-900 text-white text-sm font-bold py-1 px-2 rounded">2026</span>
                 </a>
             </div>
 
@@ -39,7 +39,7 @@
                 <x-share-button />
 
                 <a href="#register"
-                   class="bg-tek-orange-900 dark:bg-tek-orange-600 text-white px-5 py-2 rounded-lg hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all shadow-md hover:shadow-lg">Register
+                   class="bg-tek-orange-900 dark:bg-tek-orange-900 text-white px-5 py-2 rounded-lg hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all shadow-md hover:shadow-lg">Register
                     Now</a>
 
                 <!-- Theme toggle button -->
@@ -108,7 +108,7 @@
                     </div>
 
                     <a href="#register" @click="mobileMenu = false"
-                       class="block bg-tek-orange-900 dark:bg-tek-orange-600 text-white px-5 py-2 rounded-lg text-center">Register
+                       class="block bg-tek-orange-900 dark:bg-tek-orange-900 text-white px-5 py-2 rounded-lg text-center">Register
                         Now</a>
 
                     <div class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-slate-600">
