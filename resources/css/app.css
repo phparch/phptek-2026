@@ -54,13 +54,13 @@
         --color-accent: var(--color-white);
         --color-accent-content: var(--color-white);
         --color-accent-foreground: var(--color-neutral-800);
-        
+
         /* Enhanced dark mode colors */
         --color-background-dark: #0f1419;
         --color-surface-dark: #1a1f2e;
         --color-surface-elevated-dark: #242938;
-        --color-text-primary-dark: #e2e8f0;
-        --color-text-secondary-dark: #94a3b8;
+        --color-text-primary-dark: #ffffff;
+        --color-text-secondary-dark: #ffffff;
         --color-border-dark: #334155;
     }
 }
@@ -152,8 +152,8 @@ body {
         --color-primary: var(--color-tek-orange-500);
         --color-secondary: var(--color-tek-blue-400);
         --color-background: #0f1419;
-        --color-text-primary: #e2e8f0;
-        --color-text-secondary: #94a3b8;
+        --color-text-primary: #ffffff;
+        --color-text-secondary: #ffffff;
     }
 }
 
@@ -267,13 +267,20 @@ textarea:focus,
         --color-text-secondary: #000000;
         --color-background: #ffffff;
     }
-    
+
     .dark {
         --color-text-primary: #ffffff;
         --color-text-secondary: #ffffff;
         --color-background: #000000;
     }
-    
+
+    .dark .text-slate-300,
+    .dark .text-slate-400,
+    .dark .text-gray-200,
+    .dark .text-gray-300 {
+        color: #ffffff !important;
+    }
+
     button, a {
         border: 2px solid currentColor;
     }
@@ -319,5 +326,64 @@ button[aria-expanded="true"]::after {
 }
 
 .dark .text-slate-300 {
-    color: #CBD5E1; /* AA compliant contrast ratio */
+    color: #FFFFFF; /* Changed to white for better contrast */
+}
+
+.dark .text-slate-400 {
+    color: #FFFFFF; /* Changed to white for better contrast */
+}
+
+.dark .text-gray-200 {
+    color: #FFFFFF; /* Changed to white for better contrast */
+}
+
+.dark .text-gray-300 {
+    color: #FFFFFF; /* Changed to white for better contrast */
+}
+
+/* Additional accessibility improvements */
+
+/* Ensure minimum target size for interactive elements */
+button, a, [role="button"], [tabindex] {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+/* Improve focus visibility */
+*:focus-visible {
+    outline: 3px solid var(--color-tek-orange-600) !important;
+    outline-offset: 2px !important;
+}
+
+.dark *:focus-visible {
+    outline-color: var(--color-tek-orange-400) !important;
+}
+
+/* Skip link improvements */
+.sr-only:focus {
+    background-color: var(--color-tek-orange-900) !important;
+    color: white !important;
+    z-index: 9999 !important;
+}
+
+/* Ensure interactive elements have sufficient spacing */
+nav a, nav button {
+    margin: 0.25rem;
+    padding: 0.5rem;
+}
+
+/* Improve table accessibility when present */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid var(--color-gray-300);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.dark th, .dark td {
+    border-color: var(--color-slate-600);
 }

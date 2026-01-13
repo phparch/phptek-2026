@@ -4,7 +4,9 @@
     <button @click="shareDropdown = !shareDropdown"
             class="flex items-center space-x-2 px-3 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-tek-blue-500 focus:ring-opacity-50"
             aria-label="Share options"
-            :aria-expanded="shareDropdown.toString()">
+            :aria-expanded="shareDropdown.toString()"
+            :aria-controls="'share-dropdown'"
+            @keydown.escape="shareDropdown = false">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600 dark:text-gray-300" fill="none"
              viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -21,11 +23,14 @@
          x-transition:leave="transition ease-in duration-150"
          x-transition:leave-start="opacity-100 scale-100"
          x-transition:leave-end="opacity-0 scale-95"
+         x-trap="shareDropdown"
          @click.away="shareDropdown = false"
          @keydown.escape="shareDropdown = false"
+         id="share-dropdown"
          class="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-gray-200 dark:border-slate-600 py-2 z-50"
          role="menu"
          aria-label="Share menu"
+         aria-labelledby="share-button"
          style="display: none;">
 
         <!-- X (formerly Twitter) -->
@@ -190,6 +195,13 @@
     function showCopySuccess(button) {
         const originalText = button.innerHTML;
         button.innerHTML = '<span class="text-green-600 dark:text-green-400">✓ Copied!</span>';
+
+        // Announce to screen readers
+        const liveRegion = document.getElementById('live-region');
+        if (liveRegion) {
+            liveRegion.textContent = 'Link copied to clipboard';
+        }
+
         setTimeout(() => {
             button.innerHTML = originalText;
         }, 2000);

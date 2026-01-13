@@ -1,12 +1,17 @@
 <!-- Travel Information Modal -->
 <div x-data="{ open: false }"
-     @open-travel-modal.window="open = true">
+     @open-travel-modal.window="open = true"
+     @keydown.escape.window="open = false">
 
     <!-- Modal overlay -->
     <div x-show="open"
          x-transition.opacity
+         x-trap="open"
          class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4"
          @click="open = false"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="travel-info-title"
          style="display: none;"
          x-cloak>
 
@@ -23,9 +28,10 @@
 
             <!-- Header -->
             <div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-slate-600 flex-shrink-0">
-                <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Travel Information</h2>
+                <h2 id="travel-info-title" class="text-2xl font-bold text-gray-900 dark:text-white">Travel Information</h2>
                 <button @click="open = false"
-                        class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                        class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-tek-blue-500 rounded"
+                        aria-label="Close travel information modal">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                     </svg>

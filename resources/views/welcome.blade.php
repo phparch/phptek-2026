@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="{{ asset('/android-chrome-192x192.png') }}" type="image/x-icon">
     <link rel="shortcut icon" href="{{ asset('/android-chrome-512x512.png') }}" type="image/x-icon">
     <link rel="shortcut icon" href="{{ asset('/apple-touch-icon.png') }}" type="image/x-icon">
-    
+
     <!-- Primary Meta Tags -->
     <meta name="title" content="PHP Tek 2026 - The Premier PHP Conference"/>
     <meta name="description"
@@ -50,6 +50,9 @@
 <body
         class="font-sans bg-white dark:bg-slate-900 text-gray-900 dark:text-slate-100 transition-colors duration-300 pt-20">
 
+<!-- Live region for announcements -->
+<div aria-live="polite" aria-atomic="true" class="sr-only" id="live-region"></div>
+
 <!-- Skip to content link for keyboard users -->
 <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-tek-orange-900 text-white px-4 py-2 rounded z-[9999] focus:outline-none focus:ring-2 focus:ring-tek-orange-600">
     Skip to main content
@@ -59,7 +62,7 @@
 <x-navigation/>
 
 <!-- Hero section -->
-<header class="relative overflow-hidden">
+<header class="relative overflow-hidden" role="banner">
     <x-hero-section :conference="null"/>
 </header>
 
@@ -95,9 +98,9 @@
         x-init="window.addEventListener('scroll', () => { showButton = window.scrollY > 500 })"
         x-show="showButton"
         x-transition.opacity
-        @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+        @click="window.scrollTo({top: 0, behavior: 'smooth'}); document.getElementById('live-region').textContent = 'Scrolled to top of page'"
         class="fixed bottom-6 right-6 bg-tek-orange-900 dark:bg-tek-orange-600 text-white p-3 rounded-full shadow-lg hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all z-50 focus:outline-none focus:ring-2 focus:ring-tek-orange-600"
-        aria-label="Back to top">
+        aria-label="Back to top of page">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/>
     </svg>

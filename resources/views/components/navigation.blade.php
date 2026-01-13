@@ -34,10 +34,10 @@
                    class="font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Venue</a>
                 <a href="#partners"
                    class="font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Partners</a>
-                
+
                 <!-- Share Button -->
                 <x-share-button />
-                
+
                 <a href="#register"
                    class="bg-tek-orange-900 dark:bg-tek-orange-600 text-white px-5 py-2 rounded-lg hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all shadow-md hover:shadow-lg">Register
                     Now</a>
@@ -59,10 +59,12 @@
 
             <!-- Mobile menu button -->
             <div class="md:hidden" x-data="{ mobileMenu: false }">
-                <button @click="mobileMenu = !mobileMenu" 
+                <button @click="mobileMenu = !mobileMenu"
                         class="focus:outline-none focus:ring-2 focus:ring-tek-blue-500 p-1 rounded"
-                        aria-label="Open navigation menu"
-                        :aria-expanded="mobileMenu.toString()">
+                        aria-label="Toggle navigation menu"
+                        :aria-expanded="mobileMenu.toString()"
+                        :aria-controls="'mobile-menu'"
+                        @keydown.escape="mobileMenu = false">
                     <svg x-show="!mobileMenu" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                          viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -82,11 +84,14 @@
                      x-transition:leave="transition ease-in duration-150"
                      x-transition:leave-start="opacity-100 scale-100"
                      x-transition:leave-end="opacity-0 scale-95"
+                     x-trap="mobileMenu"
                      @keydown.escape="mobileMenu = false"
                      @click.away="mobileMenu = false"
+                     id="mobile-menu"
                      class="absolute top-full right-0 left-0 bg-white dark:bg-slate-800 shadow-lg rounded-b-lg p-6 space-y-4 z-40 border border-gray-200 dark:border-slate-700"
-                     role="menu"
-                     aria-label="Navigation menu">
+                     role="region"
+                     aria-label="Navigation menu"
+                     aria-labelledby="mobile-menu-button">
                     <a href="#about" @click="mobileMenu = false"
                        class="block font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">About</a>
                     <a href="#speakers" @click="mobileMenu = false"
@@ -96,12 +101,12 @@
                        class="block font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Venue</a>
                     <a href="#partners" @click="mobileMenu = false"
                        class="block font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Partners</a>
-                    
+
                     <!-- Share Button for Mobile -->
                     <div class="py-2">
                         <x-share-button />
                     </div>
-                    
+
                     <a href="#register" @click="mobileMenu = false"
                        class="block bg-tek-orange-900 dark:bg-tek-orange-600 text-white px-5 py-2 rounded-lg text-center">Register
                         Now</a>
