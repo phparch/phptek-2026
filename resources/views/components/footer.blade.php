@@ -12,7 +12,7 @@
                 <p class="text-gray-600 dark:text-white text-sm mb-6">
                     The premier PHP conference of 2026, bringing together developers, experts, and community leaders.
                 </p>
-                <div class="flex space-x-4">
+                <div class="flex flex-wrap space-x-4">
                     <a href="https://x.com/phptek"
                        class="text-gray-600 dark:text-white hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
