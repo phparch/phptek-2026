@@ -67,8 +67,10 @@
 </header>
 
 <main id="main-content" role="main">
-    <x-cfp-section/>
+
+    <x-registration-section/>
     <x-about-section/>
+    <x-cfp-section/>
 
 {{-- <x-speakers-section/>  --}}
 
@@ -78,7 +80,6 @@
 
         <x-partners-section/>
 
-<x-registration-section/>
 
 {{-- <x-newsletter-section/> --}}
 
