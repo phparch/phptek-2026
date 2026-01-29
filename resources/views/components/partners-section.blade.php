@@ -165,10 +165,19 @@
 
             // Update logo
             const logoContainer = document.getElementById('modal-sponsor-logo');
+            logoContainer.innerHTML = '';
+
             if (sponsor.logo_url) {
-                logoContainer.innerHTML = `<img src="${sponsor.logo_url}" alt="${sponsor.name}" class="max-h-48 max-w-full object-contain">`;
+                const img = document.createElement('img');
+                img.src = sponsor.logo_url;
+                img.alt = sponsor.name;
+                img.className = 'max-h-48 max-w-full object-contain';
+                logoContainer.appendChild(img);
             } else {
-                logoContainer.innerHTML = `<span class="text-2xl font-bold text-gray-300 dark:text-slate-500">LOGO</span>`;
+                const span = document.createElement('span');
+                span.className = 'text-2xl font-bold text-gray-300 dark:text-slate-500';
+                span.textContent = 'LOGO';
+                logoContainer.appendChild(span);
             }
 
             // Show modal
