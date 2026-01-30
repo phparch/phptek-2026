@@ -61,9 +61,10 @@ class Sponsor extends Model
      */
     protected function logoUrl(): Attribute
     {
+
         return Attribute::make(
             get: function (): ?string {
-                if (! $this->logo) {
+                if (!$this->logo) {
                     return null;
                 }
 
@@ -76,8 +77,8 @@ class Sponsor extends Model
                 }
 
                 $path = $this->logo;
-                if (! str_starts_with($path, 'vendor_logos/')) {
-                    $path = 'vendor_logos/'.$path;
+                if (!str_starts_with($path, 'vendor_logos/')) {
+                    $path = 'vendor_logos/' . $path;
                 }
 
                 return Storage::disk('s3')->url($path);

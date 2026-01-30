@@ -21,21 +21,9 @@
                                         onclick="openSponsorModal('{{ $sponsor->uuid }}')"
                                         data-sponsor-uuid="{{ $sponsor->uuid }}">
                                         <div class="flex flex-col items-center justify-center h-full">
-
-                                            @if($sponsor->logo)
-                                                @if(str_starts_with($sponsor->logo, 'http'))
-                                                    <img src="{{ $sponsor->logo }}" alt="{{ $sponsor->name }}"
-                                                         class="max-h-16 max-w-full object-contain mb-2">
-                                                @elseif(file_exists(public_path($sponsor->logo)))
-                                                    <img src="{{ asset($sponsor->logo) }}" alt="{{ $sponsor->name }}"
-                                                         class="max-h-16 max-w-full object-contain mb-2">
-                                                @else
-                                                    <div
-                                                        class="w-16 h-16 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-2">
-                                                        <span
-                                                            class="text-xs font-bold text-gray-500 dark:text-white">LOGO</span>
-                                                    </div>
-                                                @endif
+                                            @if($sponsor->logo_url)
+                                                <img src="{{ $sponsor->logo_url }}" alt="{{ $sponsor->name }}"
+                                                     class="max-h-20 max-w-full object-contain mb-2">
                                             @else
                                                 <div
                                                     class="w-16 h-16 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-2">
@@ -63,7 +51,7 @@
                                         <div class="flex flex-col items-center justify-center h-full">
                                             @if($sponsor->logo_url)
                                                 <img src="{{ $sponsor->logo_url }}" alt="{{ $sponsor->name }}"
-                                                     class="max-h-40 max-w-full object-contain mb-3">
+                                                     class="max-h-48 max-w-full object-contain mb-3">
                                             @else
                                                 <div
                                                     class="w-32 h-32 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-3">
@@ -177,10 +165,19 @@
 
             // Update logo
             const logoContainer = document.getElementById('modal-sponsor-logo');
+            logoContainer.innerHTML = '';
+
             if (sponsor.logo_url) {
-                logoContainer.innerHTML = `<img src="${sponsor.logo_url}" alt="${sponsor.name}" class="max-h-40 max-w-full object-contain">`;
+                const img = document.createElement('img');
+                img.src = sponsor.logo_url;
+                img.alt = sponsor.name;
+                img.className = 'max-h-48 max-w-full object-contain';
+                logoContainer.appendChild(img);
             } else {
-                logoContainer.innerHTML = `<span class="text-2xl font-bold text-gray-300 dark:text-slate-500">LOGO</span>`;
+                const span = document.createElement('span');
+                span.className = 'text-2xl font-bold text-gray-300 dark:text-slate-500';
+                span.textContent = 'LOGO';
+                logoContainer.appendChild(span);
             }
 
             // Show modal
