@@ -72,7 +72,7 @@
     <x-about-section/>
     <x-cfp-section/>
 
-<x-speakers-section/>
+{{-- <x-speakers-section/> --}
 
 <x-schedule-section/>
 
