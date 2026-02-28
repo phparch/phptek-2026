@@ -29,7 +29,8 @@
                    class="font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">About</a>
                 <a href="#speakers"
                    class="font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Speakers</a>
-                {{--                <a href="#schedule" class="font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Schedule</a>--}}
+                <a href="#schedule"
+                   class="font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Schedule</a>
                 <a href="#venue"
                    class="font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Venue</a>
                 <a href="#partners"
@@ -96,7 +97,8 @@
                        class="block font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">About</a>
                     <a href="#speakers" @click="mobileMenu = false"
                        class="block font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Speakers</a>
-                    {{--                    <a href="#schedule" @click="mobileMenu = false" class="block font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Schedule</a>--}}
+                    <a href="#schedule" @click="mobileMenu = false"
+                       class="block font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Schedule</a>
                     <a href="#venue" @click="mobileMenu = false"
                        class="block font-medium hover:text-tek-blue-700 dark:hover:text-tek-blue-400 transition-colors">Venue</a>
                     <a href="#partners" @click="mobileMenu = false"
