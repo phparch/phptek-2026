@@ -34,6 +34,16 @@ class SponsorFactory extends Factory
     }
 
     /**
+     * Create a sponsor without a website.
+     */
+    public function withoutWebsite(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'website' => null,
+        ]);
+    }
+
+    /**
      * Create PHP Architect sponsor with specific data.
      */
     public function phpArchitect(): static
