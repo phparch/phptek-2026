@@ -2,9 +2,6 @@
 
 use App\Models\Conference;
 use App\Models\Sponsor;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-
-uses(RefreshDatabase::class);
 
 beforeEach(function () {
     $this->conference = Conference::create([
@@ -22,13 +19,11 @@ beforeEach(function () {
 });
 
 test('partners section renders sponsors with website', function () {
-    $sponsor = Sponsor::factory()->create([
+    $sponsor = Sponsor::factory()->withTestLogo()->create([
         'website' => 'https://example.com',
     ]);
 
     $this->conference->sponsors()->attach($sponsor->uuid, [
-        'sponsor_uuid' => $sponsor->uuid,
-        'conference_uuid' => $this->conference->uuid,
         'sponsorship_level' => 'gold',
     ]);
 
@@ -40,11 +35,9 @@ test('partners section renders sponsors with website', function () {
 });
 
 test('partners section renders sponsors without website without errors', function () {
-    $sponsor = Sponsor::factory()->withoutWebsite()->create();
+    $sponsor = Sponsor::factory()->withTestLogo()->withoutWebsite()->create();
 
     $this->conference->sponsors()->attach($sponsor->uuid, [
-        'sponsor_uuid' => $sponsor->uuid,
-        'conference_uuid' => $this->conference->uuid,
         'sponsorship_level' => 'gold',
     ]);
 
@@ -55,21 +48,17 @@ test('partners section renders sponsors without website without errors', functio
 });
 
 test('partners section handles mix of sponsors with and without websites', function () {
-    $sponsorWithSite = Sponsor::factory()->create([
+    $sponsorWithSite = Sponsor::factory()->withTestLogo()->create([
         'website' => 'https://has-website.com',
     ]);
 
-    $sponsorWithoutSite = Sponsor::factory()->withoutWebsite()->create();
+    $sponsorWithoutSite = Sponsor::factory()->withTestLogo()->withoutWebsite()->create();
 
     $this->conference->sponsors()->attach($sponsorWithSite->uuid, [
-        'sponsor_uuid' => $sponsorWithSite->uuid,
-        'conference_uuid' => $this->conference->uuid,
         'sponsorship_level' => 'gold',
     ]);
 
     $this->conference->sponsors()->attach($sponsorWithoutSite->uuid, [
-        'sponsor_uuid' => $sponsorWithoutSite->uuid,
-        'conference_uuid' => $this->conference->uuid,
         'sponsorship_level' => 'silver',
     ]);
 
