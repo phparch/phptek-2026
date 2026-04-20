@@ -159,8 +159,16 @@
             console.log('Opening modal for sponsor:', sponsor.name);
 
             document.getElementById('modal-sponsor-name').textContent = sponsor.name;
-            document.getElementById('modal-sponsor-website').href = sponsor.website;
-            document.getElementById('modal-sponsor-website').textContent = sponsor.website;
+            const websiteEl = document.getElementById('modal-sponsor-website');
+            if (sponsor.website) {
+                websiteEl.href = sponsor.website;
+                websiteEl.textContent = sponsor.website;
+                websiteEl.parentElement.style.display = '';
+            } else {
+                websiteEl.href = '#';
+                websiteEl.textContent = '';
+                websiteEl.parentElement.style.display = 'none';
+            }
             document.getElementById('modal-sponsor-description').innerHTML = sponsor.description || 'No description available.';
 
             // Update logo
