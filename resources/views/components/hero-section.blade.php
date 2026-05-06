@@ -20,6 +20,27 @@
                     networking
                     opportunities with the PHP community.
                 </p>
+                @if($conference && $conference->getStartDate())
+                    <div x-data="countdown('{{ $conference->getStartDate()->toIso8601String() }}')"
+                         class="bg-white/80 dark:bg-tek-blue-900/30 backdrop-blur-sm border border-tek-blue-200 dark:border-tek-blue-800 rounded-xl p-4 md:p-6 shadow-md max-w-xl"
+                         role="timer"
+                         aria-live="polite"
+                         aria-label="Countdown to conference start">
+                        <p class="text-sm font-medium text-tek-blue-800 dark:text-tek-blue-300 mb-3 uppercase tracking-wide">
+                            <span x-show="!started">Conference starts in</span>
+                            <span x-show="started" x-cloak>The conference is here!</span>
+                        </p>
+                        <div x-show="!started" class="grid grid-cols-4 gap-2 md:gap-4">
+                            <template x-for="unit in [{label:'Days', value: days}, {label:'Hours', value: hours}, {label:'Minutes', value: minutes}, {label:'Seconds', value: seconds}]" :key="unit.label">
+                                <div class="flex flex-col items-center bg-tek-blue-50 dark:bg-tek-blue-800/40 rounded-lg py-2 md:py-3">
+                                    <span class="text-2xl md:text-4xl font-display font-bold text-tek-orange-900 dark:text-tek-orange-400 tabular-nums"
+                                          x-text="String(unit.value).padStart(2, '0')"></span>
+                                    <span class="text-xs md:text-sm text-gray-600 dark:text-gray-300 mt-1" x-text="unit.label"></span>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                @endif
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#register"
                        class="bg-tek-orange-900 dark:bg-tek-orange-900 text-white px-8 py-3 rounded-lg text-center font-medium hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all shadow-md hover:shadow-lg">
