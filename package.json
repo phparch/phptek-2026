@@ -14,11 +14,11 @@
         "@tailwindcss/vite": "^4.1.11",
         "alpinejs": "^3.14.9",
         "autoprefixer": "^10.4.20",
-        "axios": "^1.13.5",
+        "axios": "^1.15.0",
         "concurrently": "^9.0.1",
         "laravel-vite-plugin": "^1.0",
         "tailwindcss": "^4.1.11",
-        "vite": "^6.3"
+        "vite": "^6.4"
     },
     "optionalDependencies": {
         "@rollup/rollup-linux-x64-gnu": "4.9.5",
