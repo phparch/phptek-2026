@@ -34,6 +34,26 @@ class SponsorFactory extends Factory
     }
 
     /**
+     * Create a sponsor without a website.
+     */
+    public function withoutWebsite(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'website' => null,
+        ]);
+    }
+
+    /**
+     * Create a sponsor with an HTTP logo URL (avoids S3 dependency in tests).
+     */
+    public function withTestLogo(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'logo' => 'https://example.com/logos/test-logo.png',
+        ]);
+    }
+
+    /**
      * Create PHP Architect sponsor with specific data.
      */
     public function phpArchitect(): static

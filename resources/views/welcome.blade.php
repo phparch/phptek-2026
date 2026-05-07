@@ -63,7 +63,7 @@
 
 <!-- Hero section -->
 <header class="relative overflow-hidden" role="banner">
-    <x-hero-section :conference="null"/>
+    <x-hero-section :conference="$conference"/>
 </header>
 
 <main id="main-content" role="main">
