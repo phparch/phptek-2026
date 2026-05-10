@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.phptek.mobile",
+      "sha256_cert_fingerprints": [
+        "01:32:99:3B:D7:38:D3:A0:F0:9B:FF:21:97:67:3D:28:B3:F8:07:19:32:4F:4E:41:D1:12:59:50:11:D2:88:19",
+        "A3:27:49:D1:32:24:60:26:37:3E:B0:44:A5:D2:2F:64:D0:F8:6F:E6:02:66:F6:D3:07:94:F5:45:33:5F:28:EE"
+      ]
+    }
+  }
+]
