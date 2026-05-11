@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["4P2UTS263F.com.phptek.mobile"],
+        "components": [
+          {
+            "/": "/partners/",
+            "exclude": true,
+            "comment": "Partners index page stays on the web"
+          },
+          {
+            "/": "/partners/*",
+            "comment": "Vendor detail URLs deep-link into the Connect tab of the iOS app"
+          }
+        ]
+      }
+    ]
+  }
+}
