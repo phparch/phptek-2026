@@ -97,6 +97,46 @@ return [
             'sslmode' => 'prefer',
         ],
 
+        'phptek_tv' => [
+            'driver' => 'mysql',
+            'url' => env('PHPTEK_TV_DB_URL', env('DB_URL')),
+            'host' => env('PHPTEK_TV_DB_HOST', env('DB_HOST', '127.0.0.1')),
+            'port' => env('PHPTEK_TV_DB_PORT', env('DB_PORT', '3306')),
+            'database' => env('PHPTEK_TV_DB_DATABASE', env('DB_DATABASE', 'laravel')),
+            'username' => env('PHPTEK_TV_DB_USERNAME', env('DB_USERNAME', 'root')),
+            'password' => env('PHPTEK_TV_DB_PASSWORD', env('DB_PASSWORD', '')),
+            'unix_socket' => env('PHPTEK_TV_DB_SOCKET', env('DB_SOCKET', '')),
+            'charset' => env('DB_CHARSET', 'utf8mb4'),
+            'collation' => env('DB_COLLATION', 'utf8mb4_unicode_ci'),
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
+        'mobile_app' => [
+            'driver' => 'mysql',
+            'url' => env('MOBILE_APP_DB_URL', env('DB_URL')),
+            'host' => env('MOBILE_APP_DB_HOST', env('DB_HOST', '127.0.0.1')),
+            'port' => env('MOBILE_APP_DB_PORT', env('DB_PORT', '3306')),
+            'database' => env('MOBILE_APP_DB_DATABASE', env('DB_DATABASE', 'laravel')),
+            'username' => env('MOBILE_APP_DB_USERNAME', env('DB_USERNAME', 'root')),
+            'password' => env('MOBILE_APP_DB_PASSWORD', env('DB_PASSWORD', '')),
+            'unix_socket' => env('MOBILE_APP_DB_SOCKET', env('DB_SOCKET', '')),
+            'charset' => env('DB_CHARSET', 'utf8mb4'),
+            'collation' => env('DB_COLLATION', 'utf8mb4_unicode_ci'),
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
         'sqlsrv' => [
             'driver' => 'sqlsrv',
             'url' => env('DB_URL'),
