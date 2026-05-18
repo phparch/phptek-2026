@@ -73,6 +73,22 @@ class Conference extends Model
     }
 
     /**
+     * Get the start date as an absolute ISO 8601 instant, interpreting the
+     * stored wall-clock time as the conference timezone (e.g. America/Chicago).
+     */
+    public function getStartInstantIso(): ?string
+    {
+        if (! $this->start_date) {
+            return null;
+        }
+
+        return $this->start_date
+            ->copy()
+            ->shiftTimezone(config('tek.conference.timezone'))
+            ->toIso8601String();
+    }
+
+    /**
      * Get the formatted start date.
      */
     public function formattedStartDate(string $format = 'Y-m-d'): ?string

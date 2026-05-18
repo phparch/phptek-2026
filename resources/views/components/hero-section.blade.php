@@ -21,7 +21,7 @@
                     opportunities with the PHP community.
                 </p>
                 @if($conference && $conference->getStartDate())
-                    <div x-data="countdown('{{ $conference->getStartDate()->toIso8601String() }}')"
+                    <div x-data="countdown('{{ $conference->getStartInstantIso() }}')"
                          class="bg-white/80 dark:bg-tek-blue-900/30 backdrop-blur-sm border border-tek-blue-200 dark:border-tek-blue-800 rounded-xl p-4 md:p-6 shadow-md max-w-xl"
                          role="timer"
                          aria-live="polite"
