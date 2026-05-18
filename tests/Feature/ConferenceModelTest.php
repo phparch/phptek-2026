@@ -68,6 +68,25 @@ class ConferenceModelTest extends TestCase
     }
 
     /**
+     * The start instant ISO string should be expressed against the configured
+     * conference timezone (Central time), not the application's UTC default.
+     */
+    public function test_start_instant_iso_uses_conference_timezone(): void
+    {
+        config()->set('tek.conference.timezone', 'America/Chicago');
+
+        $conference = Conference::create([
+            'uuid' => 'test-uuid-instant',
+            'name' => 'Instant Conference',
+            'start_date' => '2026-05-19 09:00:00',
+            'end_date' => '2026-05-21 17:00:00',
+        ]);
+
+        // 9:00 AM Central in May (CDT, UTC-5) is 14:00 UTC.
+        $this->assertEquals('2026-05-19T09:00:00-05:00', $conference->getStartInstantIso());
+    }
+
+    /**
      * Test the formatted date range method.
      */
     public function test_formatted_date_range(): void
