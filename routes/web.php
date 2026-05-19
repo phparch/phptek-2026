@@ -13,3 +13,5 @@ Route::view('/giveaway', 'giveaway')
     ->name('giveaway');
 
 Route::view('/giveaway/unlock', 'giveaway-unlock')->name('giveaway.unlock');
+
+Route::view('/giveaway/check', 'giveaway-check')->name('giveaway.check');

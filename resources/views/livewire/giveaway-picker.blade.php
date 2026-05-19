@@ -20,18 +20,18 @@ new class extends Component
 >
     <div class="pointer-events-none absolute inset-0 -z-10 opacity-60"
          :class="isRolling ? 'animate-pulse' : ''">
-        <div class="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-fuchsia-500/40 blur-3xl"></div>
-        <div class="absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-cyan-500/40 blur-3xl"></div>
-        <div class="absolute top-1/3 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-indigo-500/30 blur-3xl"></div>
+        <div class="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-orange-500/40 blur-3xl"></div>
+        <div class="absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-amber-500/40 blur-3xl"></div>
+        <div class="absolute top-1/3 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-orange-600/30 blur-3xl"></div>
     </div>
 
     <div class="w-full max-w-5xl">
         <header class="text-center">
-            <p class="text-sm font-semibold uppercase tracking-[0.4em] text-indigo-300">PHP Tek 2026</p>
-            <h1 class="mt-2 bg-gradient-to-r from-fuchsia-300 via-white to-cyan-300 bg-clip-text text-5xl font-black text-transparent sm:text-6xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.4em] text-orange-300">PHP Tek 2026</p>
+            <h1 class="mt-2 bg-gradient-to-r from-orange-300 via-amber-200 to-orange-400 bg-clip-text text-5xl font-black text-transparent sm:text-6xl">
                 Giveaway Drawing
             </h1>
-            <p class="mt-4 text-indigo-200">
+            <p class="mt-4 text-orange-200/90">
                 <span class="text-3xl font-bold text-white tabular-nums" x-text="remaining.length"></span>
                 <span class="ml-1">of</span>
                 <span class="text-xl font-semibold text-white tabular-nums" x-text="attendees.length"></span>
@@ -42,16 +42,16 @@ new class extends Component
         <div
             class="relative mt-10 flex h-[28rem] items-center justify-center overflow-hidden rounded-3xl border bg-black/40 shadow-2xl backdrop-blur transition-all duration-500 sm:h-[36rem]"
             :class="isRolling
-                ? 'border-fuchsia-400/80 shadow-fuchsia-500/40 ring-4 ring-fuchsia-500/30'
-                : (winner ? 'border-emerald-400/80 shadow-emerald-500/40 ring-4 ring-emerald-400/40' : 'border-white/10')"
+                ? 'border-orange-400/80 shadow-orange-500/40 ring-4 ring-orange-500/30'
+                : (winner ? 'border-amber-300/80 shadow-amber-400/40 ring-4 ring-amber-300/40' : 'border-white/10')"
         >
             <div
                 x-show="phase === 'idle' && !winner && remaining.length > 0"
                 x-transition.opacity
                 class="text-center"
             >
-                <p class="text-2xl font-medium text-indigo-200 sm:text-3xl">Press DRAW to pick a winner</p>
-                <p class="mt-2 text-sm uppercase tracking-[0.3em] text-indigo-300">Good luck!</p>
+                <p class="text-2xl font-medium text-orange-100 sm:text-3xl">Press DRAW to pick a winner</p>
+                <p class="mt-2 text-sm uppercase tracking-[0.3em] text-orange-300">Good luck!</p>
             </div>
 
             <div
@@ -59,8 +59,8 @@ new class extends Component
                 x-transition.opacity
                 class="text-center"
             >
-                <p class="text-3xl font-bold text-emerald-300">All winners drawn!</p>
-                <p class="mt-2 text-sm uppercase tracking-[0.3em] text-emerald-300/70">Press Reset to start over</p>
+                <p class="text-3xl font-bold text-amber-300">All winners drawn!</p>
+                <p class="mt-2 text-sm uppercase tracking-[0.3em] text-amber-300/70">Press Reset to start over</p>
             </div>
 
             <div
@@ -68,7 +68,7 @@ new class extends Component
                 x-transition.opacity
                 class="text-center"
             >
-                <p class="text-2xl font-medium text-indigo-200 sm:text-3xl">No attendees are eligible yet</p>
+                <p class="text-2xl font-medium text-orange-100 sm:text-3xl">No attendees are eligible yet</p>
             </div>
 
             <div
@@ -76,9 +76,9 @@ new class extends Component
                 x-transition.opacity
                 class="flex w-full flex-col items-center"
             >
-                <p class="text-xs uppercase tracking-[0.5em] text-fuchsia-300">Drawing&hellip;</p>
+                <p class="text-xs uppercase tracking-[0.5em] text-orange-300">Drawing&hellip;</p>
                 <div
-                    class="mt-4 max-w-[90%] truncate text-4xl font-extrabold tracking-tight text-white drop-shadow-[0_0_18px_rgba(244,114,182,0.6)] sm:text-5xl"
+                    class="mt-4 max-w-[90%] truncate text-4xl font-extrabold tracking-tight text-white drop-shadow-[0_0_18px_rgba(249,115,22,0.7)] sm:text-5xl"
                     x-text="rollDisplay"
                 ></div>
             </div>
@@ -88,9 +88,9 @@ new class extends Component
                 x-transition.scale.duration.300ms
                 class="flex flex-col items-center"
             >
-                <p class="text-sm uppercase tracking-[0.5em] text-fuchsia-300">drumroll please&hellip;</p>
+                <p class="text-sm uppercase tracking-[0.5em] text-orange-300">drumroll please&hellip;</p>
                 <div
-                    class="mt-3 text-9xl font-black text-white drop-shadow-[0_0_30px_rgba(244,114,182,0.7)]"
+                    class="mt-3 text-9xl font-black text-white drop-shadow-[0_0_30px_rgba(249,115,22,0.75)]"
                     x-text="countdown"
                     :key="countdown"
                     x-transition.scale.duration.250ms.opacity
@@ -104,9 +104,9 @@ new class extends Component
                 x-transition:enter-end="opacity-100 scale-100"
                 class="px-6 text-center"
             >
-                <p class="text-sm font-semibold uppercase tracking-[0.5em] text-emerald-300">Winner!</p>
+                <p class="text-sm font-semibold uppercase tracking-[0.5em] text-amber-300">Winner!</p>
                 <p
-                    class="mt-4 break-words bg-gradient-to-r from-emerald-300 via-white to-emerald-300 bg-clip-text text-[9rem] font-black leading-none text-transparent drop-shadow-[0_0_30px_rgba(52,211,153,0.6)] sm:text-[13.5rem]"
+                    class="mt-4 break-words bg-gradient-to-r from-amber-200 via-white to-orange-300 bg-clip-text text-[9rem] font-black leading-none text-transparent drop-shadow-[0_0_30px_rgba(251,146,60,0.7)] sm:text-[13.5rem]"
                     x-text="winner?.name ?? winner?.badge_uuid"
                 ></p>
                 <p class="mt-4 text-2xl">&#x1F389;&nbsp;Congratulations!&nbsp;&#x1F389;</p>
@@ -123,7 +123,7 @@ new class extends Component
                 type="button"
                 @click="draw()"
                 :disabled="isRolling || remaining.length === 0"
-                class="group relative overflow-hidden rounded-full bg-gradient-to-r from-fuchsia-500 to-cyan-500 px-12 py-5 text-xl font-black uppercase tracking-widest text-white shadow-2xl shadow-fuchsia-500/40 transition hover:scale-105 hover:shadow-fuchsia-500/60 disabled:cursor-not-allowed disabled:from-slate-600 disabled:to-slate-700 disabled:text-slate-300 disabled:shadow-none disabled:hover:scale-100"
+                class="group relative overflow-hidden rounded-full bg-gradient-to-r from-orange-500 to-amber-400 px-12 py-5 text-xl font-black uppercase tracking-widest text-white shadow-2xl shadow-orange-500/40 transition hover:scale-105 hover:shadow-orange-500/60 disabled:cursor-not-allowed disabled:from-stone-600 disabled:to-stone-700 disabled:text-stone-300 disabled:shadow-none disabled:hover:scale-100"
             >
                 <span x-show="!isRolling && remaining.length > 0">&#x1F3B2;&nbsp;Draw a Winner</span>
                 <span x-show="isRolling">Drawing&hellip;</span>
@@ -140,7 +140,7 @@ new class extends Component
             </button>
         </div>
 
-        <p class="mt-8 text-center text-xs uppercase tracking-[0.3em] text-indigo-300/60">
+        <p class="mt-8 text-center text-xs uppercase tracking-[0.3em] text-orange-300/60">
             Drawn winners are excluded from subsequent draws in this session
         </p>
     </div>
@@ -224,7 +224,7 @@ new class extends Component
                     const container = this.$refs.confetti;
                     if (!container) return;
 
-                    const colors = ['#f472b6', '#a78bfa', '#22d3ee', '#34d399', '#fbbf24', '#fb7185'];
+                    const colors = ['#f97316', '#fb923c', '#fbbf24', '#fde047', '#f59e0b', '#ffffff'];
                     const pieces = 90;
 
                     for (let i = 0; i < pieces; i++) {
