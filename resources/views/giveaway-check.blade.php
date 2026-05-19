@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Tek 2026 - Giveaway Drawing</title>
+    <title>PHP Tek 2026 - Am I Eligible?</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" href="{{ asset('/favicon.ico') }}" type="image/x-icon">
     @vite(['resources/css/app.css'])
@@ -11,7 +11,7 @@
     @fluxAppearance
 </head>
 <body class="min-h-screen bg-gradient-to-br from-stone-950 via-orange-950 to-stone-950 text-white antialiased">
-    <livewire:giveaway-picker />
+    <livewire:giveaway-check />
     @livewireScripts
     @fluxScripts
 </body>

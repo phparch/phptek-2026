@@ -10,7 +10,7 @@
     @livewireStyles
     @fluxAppearance
 </head>
-<body class="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-slate-950 text-white antialiased">
+<body class="min-h-screen bg-gradient-to-br from-stone-950 via-orange-950 to-stone-950 text-white antialiased">
     <livewire:giveaway-unlock />
     @livewireScripts
     @fluxScripts
